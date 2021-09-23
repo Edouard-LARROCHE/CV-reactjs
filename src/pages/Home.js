@@ -1,9 +1,10 @@
 import React from 'react';
+import Navigation from '../components/Navigation';
 
 export default function Home() {
   return (
     <div>
-      <h1>page home</h1>
+      <Navigation />
     </div>
   );
 }
