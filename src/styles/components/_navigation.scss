@@ -3,7 +3,7 @@
   font-family: $font-1;
   height: 100%;
   min-height: $minHeight;
-  min-width: 264px;
+  width: 264px;
   border-radius: $borderRadius;
   position: relative;
   display: grid;
@@ -14,6 +14,8 @@
     '2'
     '3';
 }
+/********************grid-1*******************/
+
 .id {
   grid-area: 1;
   text-align: center;
@@ -28,9 +30,11 @@
   width: 100%;
 }
 img {
-  margin-top: 2rem;
+  margin-top: 1rem;
+  width: 11rem;
+  height: 12rem;
   border-radius: 50%;
-  box-shadow: 0 0 0 4px $color-1, 0 0 0 8px $color-3;
+  box-shadow: 0 0 0 4px $color-3, 0 0 0 8px $color-1;
 }
 
 h3 {
@@ -41,16 +45,18 @@ h3 {
   color: $color-1;
 }
 
+/********************grid-2*******************/
+
 .navigation {
   grid-area: 2;
-  padding: 2rem 1rem;
-
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  padding-left: 1rem;
   ul {
     height: 100%;
     display: grid;
 
     li {
-      padding: 1rem 0 1rem 0.4rem;
       font-size: 1rem;
       position: relative;
 
@@ -65,11 +71,93 @@ h3 {
       position: absolute;
       font-size: 1rem;
       transform: translateY(2px);
-
       transition: 1s ease;
     }
     span {
       margin-left: 2rem;
+    }
+  }
+}
+
+/********************grid-3*******************/
+
+.socialNetwork {
+  grid-area: 3;
+
+  ul {
+    display: flex;
+    width: 264px;
+    padding: 0 14px;
+    justify-content: space-between;
+
+    li {
+      font-size: 1.4rem;
+      background: $color-3;
+      color: $color-2;
+      border-radius: 50%;
+      padding: 0.5rem 0.8rem;
+      transition: 0.3s;
+      cursor: pointer;
+
+      &:hover {
+        background: $color-2;
+      }
+    }
+  }
+
+  .signature {
+    margin-top: 2rem;
+    text-align: center;
+    letter-spacing: 0.2rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .sidebar {
+    display: flex;
+    min-height: 50px;
+    margin-bottom: 2rem;
+    width: 100%;
+
+    .id,
+    .socialNetwork {
+      display: none;
+    }
+    .navigation {
+      width: 100%;
+      padding: 1rem 1rem;
+
+      ul {
+        display: flex;
+        justify-content: space-between;
+
+        li {
+          margin: 0 15px 0 15px;
+        }
+
+        span {
+          margin-left: 1.5rem !important;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 580px) {
+  .sidebar {
+    ul {
+      justify-content: space-around !important;
+
+      li {
+        padding: 1rem 0 !important;
+      }
+      i {
+        font-size: 1.4rem !important;
+        transform: translateY(-11px) !important;
+      }
+      span {
+        display: none;
+      }
     }
   }
 }

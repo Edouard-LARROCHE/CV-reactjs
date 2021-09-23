@@ -14,25 +14,25 @@ export default function Navigation() {
         <ul>
           <li>
             <NavLink exact to='/' activeClassName='navActive'>
-              <i className='fas fa-home'></i>
+              <i className='fas fa-home' />
               <span>Acceuil</span>
             </NavLink>
           </li>
           <li>
             <NavLink exact to='skills' activeClassName='navActive'>
-              <i className='fas fa-mountain'></i>
+              <i className='fas fa-mountain' />
               <span>Skills</span>
             </NavLink>
           </li>
           <li>
             <NavLink exact to='portfolio' activeClassName='navActive'>
-              <i className='fas fa-images'></i>
+              <i className='fas fa-images' />
               <span>Portfolio</span>
             </NavLink>
           </li>
           <li>
             <NavLink exact to='contact' activeClassName='navActive'>
-              <i className='fas fa-address-book'></i>
+              <i className='fas fa-address-book' />
               <span>Contact</span>
             </NavLink>
           </li>
@@ -43,27 +43,27 @@ export default function Navigation() {
         <ul>
           <li>
             <a href='https://www.linkedin.com/in/edouard-larroche-9099a6163/' target='_blank' rel='noopener noreferrer'>
-              <i className='fab fa-linkedin'></i>
+              <i className='fab fa-linkedin' />
             </a>
           </li>
           <li>
             <a href='https://github.com/Edouard-LARROCHE' target='_blank' rel='noopener noreferrer'>
-              <i className='fab fa-github'></i>
+              <i className='fab fa-github' />
             </a>
           </li>
           <li>
             <a href='https://www.twitter.com' target='_blank' rel='noopener noreferrer'>
-              <i className='fab fa-twitter'></i>
+              <i className='fab fa-twitter' />
             </a>
           </li>
           <li>
             <a href='https://www.facebook.com' target='_blank' rel='noopener noreferrer'>
-              <i className='fab fa-facebook'></i>
+              <i className='fab fa-facebook' />
             </a>
           </li>
         </ul>
         <div className='signature'>
-          <p>Edouard LARROCHE - 2021</p>
+          <p>Edouard CV - 2021</p>
         </div>
       </div>
     </div>
