@@ -8,19 +8,28 @@
     position: relative;
     overflow: hidden;
 
-    &:after {
-      content: '';
-      position: absolute;
-      height: 100%;
-      width: inherit;
-      z-index: -1;
-    }
-
     .content {
       position: absolute;
       top: 5%;
       left: 6%;
       font-family: $font-1;
+
+      h2 {
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+        margin-top: 1rem;
+        color: $color-1;
+      }
+
+      h3 {
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+        margin-top: 1.5rem;
+        margin-left: 2rem;
+        color: $color-1;
+      }
 
       //   h2 {
       //     font-size: 2rem;
@@ -35,25 +44,37 @@
       //     color: $color-3;
       //     text-shadow: 1px 4px 1px $black;
       //   }
-      .pdf {
-        a {
-          font-size: 1rem;
-          background: $color-3;
-          padding: 1rem 2rem;
-          border-radius: $borderRadius;
-          box-shadow: 0 3px 1px $black;
-          transition: 0.2s ease;
+      //   .pdf {
+      //     a {
+      //       font-size: 1rem;
+      //       background: $color-3;
+      //       padding: 1rem;
+      //       border-radius: $borderRadius;
+      //       box-shadow: 0 3px 1px $black;
+      //       transition: 0.2s ease;
 
-          &:hover {
-            background: $color-2;
-          }
-        }
-      }
+      //       &:hover {
+      //         background: $color-2;
+      //       }
+      //     }
+      //   }
     }
   }
 }
 @media screen and (max-width: 850px) {
   .homeContent {
     margin: 0 !important;
+  }
+}
+
+.sphere {
+  padding-top: 1.5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+
+  @media screen and (max-width: 850px) {
+    .sphere {
+      margin-bottom: 5rem !important;
+    }
   }
 }
