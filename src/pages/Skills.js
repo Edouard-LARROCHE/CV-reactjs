@@ -1,9 +1,10 @@
 import React from 'react';
+import Navigation from '../components/Navigation';
 
 export default function Skills() {
   return (
     <div>
-      <h1>page skills</h1>
+      <Navigation />
     </div>
   );
 }

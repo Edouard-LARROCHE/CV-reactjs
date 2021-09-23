@@ -1,0 +1,79 @@
+/****************font****************/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+$font-1: 'Roboto Condensed, cursive';
+
+/****************color****************/
+
+$color-1: #5f6d7e;
+$color-2: #e5e5db;
+$color-3: #d4d5cd;
+
+$white: #ddd;
+$black: #333;
+
+/****************styles global****************/
+
+$borderRadius: 15px;
+$shadow: 0 1px 3px #333;
+$minHeight: 95vh;
+
+@mixin verticalCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 1rem auto;
+  max-width: 1200px;
+  font-family: $font-1;
+  color: $black;
+}
+
+button {
+  cursor: pointer;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: $black;
+  cursor: pointer;
+}
+
+a:visited {
+  color: $black;
+}
+
+.home,
+.contact,
+.portfolio,
+.skills {
+  display: flex;
+
+  @media screen and (max-width: 850px) {
+    display: block !important;
+  }
+}
+
+.homeContent,
+.contactContent,
+.portfolioContent,
+.skillsContent {
+  margin-left: 0.4rem;
+
+  @media screen and (max-width: 850px) {
+    margin-left: 0 !important;
+  }
+}
