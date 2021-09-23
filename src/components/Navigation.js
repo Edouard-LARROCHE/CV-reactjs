@@ -38,6 +38,34 @@ export default function Navigation() {
           </li>
         </ul>
       </div>
+
+      <div className='socialNetwork'>
+        <ul>
+          <li>
+            <a href='https://www.linkedin.com/in/edouard-larroche-9099a6163/' target='_blank' rel='noopener noreferrer'>
+              <i className='fab fa-linkedin'></i>
+            </a>
+          </li>
+          <li>
+            <a href='https://github.com/Edouard-LARROCHE' target='_blank' rel='noopener noreferrer'>
+              <i className='fab fa-github'></i>
+            </a>
+          </li>
+          <li>
+            <a href='https://www.twitter.com' target='_blank' rel='noopener noreferrer'>
+              <i className='fab fa-twitter'></i>
+            </a>
+          </li>
+          <li>
+            <a href='https://www.facebook.com' target='_blank' rel='noopener noreferrer'>
+              <i className='fab fa-facebook'></i>
+            </a>
+          </li>
+        </ul>
+        <div className='signature'>
+          <p>Edouard LARROCHE - 2021</p>
+        </div>
+      </div>
     </div>
   );
 }
