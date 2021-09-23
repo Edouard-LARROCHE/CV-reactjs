@@ -7,11 +7,11 @@ export default function Home() {
       <Navigation />
       <div className='homeContent'>
         <div className='content'>
-          <h1>Edouard-LARROCHE</h1>
-          <h2>Développeur web Full-Stack junior</h2>
+          <h2>Edouard-LARROCHE</h2>
+          <h3>Développeur web Full-Stack junior</h3>
           <div className='pdf'>
             <a href='./assets/cv.pdf' target='_blank'>
-              Télécharger
+              Télécharger mon CV
             </a>
           </div>
         </div>
