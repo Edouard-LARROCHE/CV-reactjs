@@ -6,7 +6,7 @@ export default function Navigation() {
     <div className='sidebar'>
       <div className='id'>
         <div className='idcontent'>
-          <img src='./assets/avatar2.png' alt='background' />
+          {/* <img src='./assets/git.png' alt='background' /> */}
           <h3> Edouard LARROCHE</h3>
         </div>
       </div>
@@ -63,7 +63,7 @@ export default function Navigation() {
           </li>
         </ul>
         <div className='signature'>
-          <p>Edouard CV - 2021</p>
+          <p>Edouard.CV - 2021</p>
         </div>
       </div>
     </div>
