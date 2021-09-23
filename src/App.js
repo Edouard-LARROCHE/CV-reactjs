@@ -1,11 +1,20 @@
-import './App.css';
+import React from 'react';
+import Contact from './pages/Contact';
+import Home from './pages/Home';
+import NotFound from './pages/NotFound';
+import Portfolio from './pages/Portfolio';
+import Skills from './pages/Skills';
 
-function App() {
+const App = () => {
   return (
-    <div className='App'>
-      <h1>test</h1>
+    <div>
+      <Home />
+      <Contact />
+      <Skills />
+      <Portfolio />
+      <NotFound />
     </div>
   );
-}
+};
 
 export default App;
