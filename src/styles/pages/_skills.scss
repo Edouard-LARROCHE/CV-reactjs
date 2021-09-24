@@ -207,7 +207,7 @@
 }
 
 // @media screen and (max-width: 950px) {
-//   .knowledgesContent {
+//   .skillsContent {
 //     h3 {
 //       font-size: 1.2rem !important;
 //     }
@@ -234,26 +234,26 @@
 //     }
 //   }
 // }
-// @media screen and (max-width: 500px) {
-//   .knowledgesContent {
-//     display: grid !important;
-//     grid-template-columns: 1fr !important;
-//     grid-template-rows: 1fr 1fr 180px 180px !important;
+@media screen and (max-width: 500px) {
+  .skillsContent {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    grid-template-rows: 1fr 1fr 180px 180px !important;
 
-//     .languages {
-//       grid-area: 1 !important;
-//     }
-//     .experience {
-//       grid-area: 2 !important;
-//       margin-left: 0 !important;
-//     }
-//     .otherSkills {
-//       grid-area: 3 !important;
-//       margin-right: 0 !important;
-//     }
-//     .hobbies {
-//       grid-area: 4 !important;
-//       margin-top: 0.5rem !important;
-//     }
-//   }
-// }
+    .languages {
+      grid-area: 1 !important;
+    }
+    .experience {
+      grid-area: 2 !important;
+      margin-left: 0 !important;
+    }
+    .otherSkills {
+      grid-area: 3 !important;
+      margin-right: 0 !important;
+    }
+    .hobbies {
+      grid-area: 4 !important;
+      margin-top: 0.5rem !important;
+    }
+  }
+}

@@ -11,7 +11,7 @@ export default function hobbies() {
         </li>
         <li className='hobbiy'>
           <i className='fas fa-laptop' />
-          <span>Nouvelle technologies</span>
+          <span>Nouvelles technologies</span>
         </li>
         <li className='hobbiy'>
           <i className='fas fa-snowboarding' />
