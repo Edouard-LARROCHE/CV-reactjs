@@ -7,15 +7,15 @@ export default function hobbies() {
       <ul>
         <li className='hobbiy'>
           <i className='fas fa-drum' />
-          <span>Batterie et percussion</span>
+          <span>Batterie et percussions</span>
         </li>
         <li className='hobbiy'>
           <i className='fas fa-laptop' />
-          <span>Nouvelle technologie</span>
+          <span>Nouvelle technologies</span>
         </li>
         <li className='hobbiy'>
           <i className='fas fa-snowboarding' />
-          <span>Sport de glisse</span>
+          <span>Sports de glisse</span>
         </li>
         <li className='hobbiy'>
           <i className='fas fa-video' />
