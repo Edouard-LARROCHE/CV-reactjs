@@ -1,0 +1,118 @@
+.skills {
+  .skillsContent {
+    min-height: $minHeight;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 38% 1fr 1fr;
+    grid-template-rows: 70% 30%;
+    grid-template-areas:
+      'L E E'
+      'O O H';
+
+    .languagesFrameworks,
+    .experience,
+    .otherSkills,
+    .hobbies {
+      background: $color-2;
+      border-radius: $borderRadius;
+    }
+
+    h3 {
+      margin-bottom: 0.8rem;
+    }
+
+    h4 {
+      margin-bottom: 0.8rem;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.2rem;
+      color: $color-1;
+    }
+    h5 {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.2rem;
+      color: $black;
+    }
+
+    .languagesFrameworks {
+      padding: 0rem 0.8rem 0 0.8em;
+      grid-area: L;
+      margin-bottom: 0.1rem;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas:
+        'L'
+        'F';
+
+      .languagesDisplay {
+        grid-area: L;
+      }
+      .frameworksDisplay {
+        margin-top: -0.5rem;
+        grid-area: F;
+      }
+
+      .years {
+        font-size: 0.7rem;
+        display: flex;
+        justify-content: space-between;
+        color: rgb(71, 66, 66);
+
+        span {
+          width: 36%;
+
+          &:nth-child(2) {
+            text-align: right;
+            width: 25%;
+          }
+          &:nth-child(3) {
+            text-align: right;
+            width: 25%;
+          }
+          &:nth-child(2):before,
+          &:nth-child(3):before {
+            content: '';
+            background: $black;
+            position: absolute;
+            height: 155px;
+            width: 1px;
+            transform: translate(11px, 20px);
+          }
+        }
+      }
+      .languagesList {
+        padding-top: 1rem;
+
+        li {
+          color: $color-1;
+        }
+        .progressBar {
+          background: transparent;
+          border-radius: 50px;
+          margin-top: 0.2rem;
+          position: relative;
+
+          &:after {
+            position: absolute;
+            content: '';
+            background: $black;
+            border-radius: 50px;
+            height: 0.2rem;
+            width: 0;
+            animation: line 2s ease-out forwards;
+
+            @keyframes line {
+              to {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
