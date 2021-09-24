@@ -33,7 +33,7 @@ export const portfolioData = [
   },
   {
     id: 5,
-    name: 'Test',
+    name: 'Space Js',
     languagesIcons: ['fab fa-js', 'fab fa-css3-alt', 'fab fa-react'],
     source: 'https://github.com/',
     info: 'Lorem tgrt gr yht hyt h th ththyuhj ujth yj tjt ry thu j bhtu j t uj yuj yujujyj yjy j yujiy ',
