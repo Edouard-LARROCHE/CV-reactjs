@@ -1,0 +1,42 @@
+export const portfolioData = [
+  {
+    id: 1,
+    name: 'Yoga with Joy',
+    languagesIcons: ['fab fa-js', 'fab fa-css3-alt', 'fab fa-react', 'fab fa-node'],
+    source: 'https://yoga-with-joy.netlify.app/',
+    info: 'Lorem tgrt gr yht hyt h th ththyuhj ujth yj tjt ry thu j bhtu j t uj yuj yujujyj yjy j yujiy ',
+    picture: './assets/joy.png',
+  },
+  {
+    id: 2,
+    name: 'Marsbot',
+    languagesIcons: ['fab fa-js', 'fab fa-css3-alt', 'fab fa-react'],
+    source: 'https://github.com/BaptisteGrias/Marsbot',
+    info: 'Lorem tgrt gr yht hyt h th ththyuhj ujth yj tjt ry thu j bhtu j t uj yuj yujujyj yjy j yujiy ',
+    picture: './assets/mars.png',
+  },
+  {
+    id: 3,
+    name: 'Oovy',
+    languagesIcons: ['fab fa-js', 'fab fa-css3-alt', 'fab fa-react'],
+    source: 'https://github.com/Edouard-LARROCHE/Oovy-project-2',
+    info: 'Lorem tgrt gr yht hyt h th ththyuhj ujth yj tjt ry thu j bhtu j t uj yuj yujujyj yjy j yujiy ',
+    picture: './assets/oovy.png',
+  },
+  {
+    id: 4,
+    name: 'Wilders Portfolio',
+    languagesIcons: ['fab fa-js', 'fab fa-css3-alt', 'fab fa-html5'],
+    source: 'https://github.com/JeromeShaaban/WildersPortfolio',
+    info: 'Lorem tgrt gr yht hyt h th ththyuhj ujth yj tjt ry thu j bhtu j t uj yuj yujujyj yjy j yujiy ',
+    picture: './assets/wildcodeschool.png',
+  },
+  {
+    id: 5,
+    name: 'Space Js',
+    languagesIcons: ['fab fa-js', 'fab fa-css3-alt', 'fab fa-react'],
+    source: 'https://github.com/',
+    info: 'Lorem tgrt gr yht hyt h th ththyuhj ujth yj tjt ry thu j bhtu j t uj yuj yujujyj yjy j yujiy ',
+    picture: './assets/nebula.jpg',
+  },
+];

@@ -1,0 +1,259 @@
+.skills {
+  .skillsContent {
+    min-height: $minHeight;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 38% 1fr 1fr;
+    grid-template-rows: 70% 30%;
+    grid-template-areas:
+      'L E E'
+      'O O H';
+
+    .languagesFrameworks,
+    .experience,
+    .otherSkills,
+    .hobbies {
+      background: $color-2;
+      border-radius: $borderRadius;
+    }
+
+    h3 {
+      text-decoration: underline;
+      margin-bottom: 0.8rem;
+    }
+
+    h5 {
+      padding-bottom: 0.7rem;
+      text-decoration: underline;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.2rem;
+      color: $black;
+    }
+
+    .languagesFrameworks {
+      padding: 0rem 0.8rem 0 0.8em;
+      grid-area: L;
+      margin-bottom: 0.5rem;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas:
+        'L'
+        'F';
+
+      .languagesDisplay {
+        grid-area: L;
+      }
+      .frameworksDisplay {
+        margin-top: -0.5rem;
+        grid-area: F;
+      }
+
+      .years {
+        font-size: 0.7rem;
+        display: flex;
+        justify-content: space-between;
+        color: rgb(71, 66, 66);
+
+        span {
+          width: 36%;
+
+          &:nth-child(2) {
+            text-align: center;
+            width: 25%;
+          }
+          &:nth-child(3) {
+            text-align: right;
+            width: 25%;
+          }
+          &:nth-child(2):before,
+          &:nth-child(3):before {
+            content: '';
+            background: $black;
+            position: absolute;
+            height: 155px;
+            width: 1px;
+            transform: translate(11px, 20px);
+          }
+        }
+      }
+      .languagesList {
+        padding-top: 1rem;
+
+        li {
+          color: $color-1;
+        }
+        .progressBar {
+          background: transparent;
+          border-radius: 50px;
+          margin-top: 0.2rem;
+          position: relative;
+
+          &:after {
+            position: absolute;
+            content: '';
+            background: $black;
+            border-radius: 50px;
+            height: 0.2rem;
+            width: 0;
+            animation: line 2s ease-out forwards;
+
+            @keyframes line {
+              to {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/*****************************XP***********************************/
+
+.experience {
+  padding: 0rem 0.8rem 0 0.8em;
+  grid-area: E;
+  margin: 0 0 0.5rem 0.5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 18% 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    '1'
+    '2'
+    '3'
+    '4';
+
+  h4 {
+    text-decoration: underline;
+    margin-bottom: 0.3rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    color: $color-1;
+  }
+
+  p {
+    text-align: justify;
+  }
+  .title-exp {
+    grid-area: 1;
+  }
+  .exp-1 {
+    grid-area: 2;
+  }
+  .exp-2 {
+    position: relative;
+    top: 2.5rem;
+    grid-area: 3;
+  }
+  .exp-3 {
+    position: relative;
+    top: 5rem;
+    grid-area: 4;
+  }
+}
+
+/****************************autres compétences***********************************/
+
+.otherSkills {
+  padding: 0rem 0.8rem 0 0.8em;
+  grid-area: O;
+  margin-right: 0.5rem;
+
+  .list {
+    display: flex;
+    width: 75%;
+    height: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+
+    ul {
+      height: 75%;
+      display: grid;
+
+      i {
+        color: $color-1;
+      }
+    }
+  }
+}
+
+/*****************************interets***********************************/
+
+.hobbies {
+  padding: 0rem 0.8rem 0 0.8em;
+  grid-area: H;
+
+  ul {
+    height: 70%;
+    display: grid;
+
+    li {
+      i {
+        position: absolute;
+        transform: translateX(1rem);
+        color: $color-1;
+      }
+      span {
+        position: absolute;
+        transform: translateX(2.6rem);
+      }
+    }
+  }
+}
+
+// @media screen and (max-width: 950px) {
+//   .skillsContent {
+//     h3 {
+//       font-size: 1.2rem !important;
+//     }
+//     .languagesList {
+//       padding-top: 0.2rem !important;
+//     }
+//     p {
+//       font-size: 0.8rem;
+//     }
+//     .otherSkills,
+//     .hobbies {
+//       font-size: 0.8rem;
+//     }
+//   }
+// }
+// @media screen and (max-width: 850px) {
+//   .knowledgesContent {
+//     h4 {
+//       font-size: 0.9rem !important;
+//     }
+//     h5 {
+//       font-size: 0.6rem !important;
+//       padding: 0.2rem 1rem !important;
+//     }
+//   }
+// }
+@media screen and (max-width: 500px) {
+  .skillsContent {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    grid-template-rows: 1fr 1fr 180px 180px !important;
+
+    .languages {
+      grid-area: 1 !important;
+    }
+    .experience {
+      grid-area: 2 !important;
+      margin-left: 0 !important;
+    }
+    .otherSkills {
+      grid-area: 3 !important;
+      margin-right: 0 !important;
+    }
+    .hobbies {
+      grid-area: 4 !important;
+      margin-top: 0.5rem !important;
+    }
+  }
+}
