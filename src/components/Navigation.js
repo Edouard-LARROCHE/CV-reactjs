@@ -6,8 +6,8 @@ export default function Navigation() {
     <div className='sidebar'>
       <div className='id'>
         <div className='idcontent'>
-          <img src='./assets/avatar6.png' alt='background' />
-          <h3> Edouard LARROCHE</h3>
+          <img src='./assets/avavtar7.jpg' alt='background' />
+          <h3> Edouard-LARROCHE</h3>
         </div>
       </div>
       <div className='navigation'>

@@ -1,0 +1,11 @@
+.contact {
+  .contactContent {
+    background-color: $color-2;
+    min-height: $minHeight;
+    width: 100%;
+    min-height: 500px;
+    border-radius: $borderRadius;
+    position: relative;
+    overflow: hidden;
+  }
+}

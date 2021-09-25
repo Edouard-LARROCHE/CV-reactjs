@@ -22,7 +22,7 @@
 
     li {
       color: $black;
-      font-size: 1.1rem;
+      font-size: 0.9rem;
       text-transform: uppercase;
       padding: 0 1rem;
       flex: 1;
@@ -30,12 +30,13 @@
       @include verticalCenter;
 
       input[type='radio'] {
-        visibility: hidden;
+        visibility: visible;
         position: relative;
+        margin-right: 0.3rem;
 
         &:before {
           content: '';
-          visibility: visible;
+          visibility: hidden;
           position: absolute;
           top: -4px;
           left: -12px;
@@ -57,7 +58,7 @@
           border-radius: 50%;
           cursor: pointer;
           transition: 0.3s;
-          background: $color-2;
+          background: $color-1;
           transform: scale(0);
           transform-origin: center;
         }
@@ -91,7 +92,7 @@
       padding: 0.3rem;
       box-shadow: $shadow;
       display: grid;
-      grid-template-rows: 15% 55% 15% 15%;
+      grid-template-rows: 15% 15% 55% 15%;
       grid-template-areas:
         '1'
         '2'
@@ -99,7 +100,7 @@
         '4';
     }
     .icons {
-      grid-area: 3;
+      grid-area: 2;
       display: flex;
       justify-content: center;
       @include verticalCenter;
@@ -122,7 +123,7 @@
       transform: translateY(-20px);
     }
     img {
-      grid-area: 2;
+      grid-area: 3;
       object-fit: cover;
       margin: 0 auto;
       width: 100%;
@@ -151,20 +152,19 @@
       bottom: 0;
       right: 0;
       background: rgba(0, 0, 0, 0.507);
-      animation: popup 0.3s ease forwards;
+      animation: popup 0.1s ease forwards;
       transform-origin: center;
 
       .infosContent {
         position: relative;
         top: 25%;
-        width: 600px;
+        width: 550px;
         margin: 0 auto;
-        color: $color-1;
-        background: $color-2;
+        background: $color-3;
         border-radius: $borderRadius;
         padding: 2rem;
         box-shadow: 0 10px 10px #333;
-        animation: popup 0.6s ease forwards;
+        animation: popup 0.3s ease forwards;
         transform: scale(0);
         transform-origin: center;
 
@@ -176,32 +176,33 @@
       }
       .head {
         display: flex;
-        justify-content: space-around;
-        margin: 1rem 0;
+        justify-content: center;
+        margin: 0.5rem 0;
       }
       h2 {
-        text-align: left;
+        font-family: $font-1;
+        text-decoration: underline;
+        text-align: center;
         margin-bottom: 1rem;
-      }
-      .button {
-        cursor: pointer;
+        letter-spacing: 0.2rem;
         color: $black;
-        background: $color-1;
-        border-radius: $borderRadius;
-        padding: 1rem;
-        transition: 0.2s;
-
-        &:hover {
-          background: $color-2;
-        }
+        text-transform: uppercase;
       }
+
       .text {
         text-align: justify;
         padding-bottom: 1rem;
       }
-      .return {
-        margin: 1rem auto;
-        width: 200px;
+
+      .back {
+        transform: translate(-150px, 5px);
+        cursor: pointer;
+      }
+      .show {
+        display: flex;
+        justify-content: center;
+        transform: translate(230px, 15px);
+        cursor: pointer;
       }
     }
   }
