@@ -1,0 +1,13 @@
+.contact-content {
+  background: $color-2;
+  border-radius: $borderRadius;
+  width: 100%;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 20% 45% 35%;
+  grid-template-areas:
+    '1'
+    '2'
+    '3';
+}
