@@ -30,12 +30,13 @@
       @include verticalCenter;
 
       input[type='radio'] {
-        visibility: hidden;
+        visibility: visible;
         position: relative;
+        margin-right: 0.3rem;
 
         &:before {
           content: '';
-          visibility: visible;
+          visibility: hidden;
           position: absolute;
           top: -4px;
           left: -12px;
@@ -57,7 +58,7 @@
           border-radius: 50%;
           cursor: pointer;
           transition: 0.3s;
-          background: $color-2;
+          background: $color-1;
           transform: scale(0);
           transform-origin: center;
         }
