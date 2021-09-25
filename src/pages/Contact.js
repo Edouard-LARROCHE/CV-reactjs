@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Navigation from '../components/Navigation';
+import { TextField, Grid } from '@material-ui/core';
 
 export default function Contact() {
   const [name, setName] = useState('');
@@ -69,43 +70,48 @@ export default function Contact() {
   return (
     <div className='contact'>
       <Navigation />
-      <div className='contact-content'>
-        <form className='input'>
-          <input className='champs' type='text' id='name' name='name' onChange={(e) => setName(e.target.value)} placeholder='Nom *' value={name} />
-          <input
-            className='champs'
-            type='text'
-            id='company'
-            name='company'
-            onChange={(e) => setCompany(e.target.value)}
-            placeholder='Nom Entreprise'
-            value={company}
-          />
-          <input className='champs' type='tel' id='tel' name='tel' onChange={(e) => setTel(e.target.value)} placeholder='Téléphone' value={tel} />
-          <input
-            className='champs'
-            type='email'
-            id='email'
-            autoComplete='off'
-            name='email'
-            onChange={(e) => setEmail(e.target.value)}
-            placeholder='Adresse mail *'
-            value={email}
-          />
+      <div className='contactContent'>
+        <h3 className='header'>Contactez-moi</h3>
+        <Grid component='form' container required justify='center' style={{ width: '90%', maxWidth: '500px', margin: '0 auto' }}>
+          <TextField hintText='Enter your Occupation' floatingLabelText='Occupation' placeholder='jhhj' />
+        </Grid>
+        <form className='contact-form'>
+          <div className='form-content'>
+            <input type='text' id='name' name='name' onChange={(e) => setName(e.target.value)} placeholder='Nom *' value={name} />
+            <input
+              type='text'
+              id='company'
+              name='company'
+              onChange={(e) => setCompany(e.target.value)}
+              placeholder='Nom Entreprise'
+              value={company}
+            />
+            <input type='tel' id='tel' name='tel' onChange={(e) => setTel(e.target.value)} placeholder='Téléphone' value={tel} />
+            <div className='email-content'>
+              <input
+                type='email'
+                id='email'
+                autoComplete='off'
+                name='email'
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder='Adresse mail *'
+                value={email}
+              />
+            </div>
 
-          <div className='email-err' />
+            <div className='email-err' />
 
-          <textarea
-            className='textarea'
-            type='textarea'
-            id='message'
-            name='message'
-            onChange={(e) => setMessage(e.target.value)}
-            placeholder='Message *'
-            value={message}
-          />
+            <textarea
+              type='textarea'
+              id='message'
+              name='message'
+              onChange={(e) => setMessage(e.target.value)}
+              placeholder='Message *'
+              value={message}
+            />
 
-          <div className='message-err' />
+            <div className='message-err' />
+          </div>
           <div>
             <button className='button' value='Envoyer' type='submit' onClick={handleSubmit}>
               Envoyer

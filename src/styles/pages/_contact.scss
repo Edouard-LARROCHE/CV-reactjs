@@ -1,13 +1,11 @@
-.contact-content {
-  background: $color-2;
-  border-radius: $borderRadius;
-  width: 100%;
-  overflow: hidden;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 20% 45% 35%;
-  grid-template-areas:
-    '1'
-    '2'
-    '3';
+.contact {
+  .contactContent {
+    background-color: $color-2;
+    min-height: $minHeight;
+    width: 100%;
+    min-height: 500px;
+    border-radius: $borderRadius;
+    position: relative;
+    overflow: hidden;
+  }
 }
