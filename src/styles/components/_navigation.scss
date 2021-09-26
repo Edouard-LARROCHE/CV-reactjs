@@ -94,6 +94,7 @@ h3 {
 
 .socialNetwork {
   grid-area: 3;
+  transform: translateY(-3rem);
 
   ul {
     display: flex;
@@ -117,7 +118,7 @@ h3 {
   }
 
   .signature {
-    margin-top: 2rem;
+    margin-top: 3rem;
     text-align: center;
     letter-spacing: 0.2rem;
     font-size: 0.8rem;
