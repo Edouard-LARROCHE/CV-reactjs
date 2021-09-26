@@ -62,6 +62,11 @@ export default function Navigation() {
             </a>
           </li>
         </ul>
+        <div>
+          <NavLink exact to='/' activeClassName='navActive'>
+            <i className='fa fa-lock' />
+          </NavLink>
+        </div>
         <div className='signature'>
           <p>Edouard.CV - 2021</p>
         </div>
