@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Navigation from '../components/Navigation';
 import SendIcon from '@material-ui/icons/Send';
 import { TextField } from '@material-ui/core';
+import { CopyToClipboard } from 'react-copy-to-clipboard';
 
 export default function Contact() {
   const [name, setName] = useState('');
@@ -102,18 +103,17 @@ export default function Contact() {
             placeholder='Téléphone'
             value={tel}
           />
-          <div className='email-content'>
-            <TextField
-              style={{ width: '20rem', paddingBottom: '1rem' }}
-              type='email'
-              id='email'
-              autoComplete='off'
-              name='email'
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder='Adresse mail *'
-              value={email}
-            />
-          </div>
+
+          <TextField
+            style={{ width: '20rem', paddingBottom: '1rem' }}
+            type='email'
+            id='email'
+            autoComplete='off'
+            name='email'
+            onChange={(e) => setEmail(e.target.value)}
+            placeholder='Adresse mail *'
+            value={email}
+          />
 
           <div className='email-err' />
 
@@ -135,7 +135,25 @@ export default function Contact() {
           <SendIcon className='send' onClick={handleSubmit} />
         </form>
         <div className='info'>
-          <h3> téléphone et adresse </h3>
+          <div className='map'>
+            <i class='fas fa-map-marker-alt' />
+            <h5>Région Ile De France</h5>
+          </div>
+          <div className='mail'>
+            <i className='fas fa-at' />
+            <CopyToClipboard text='edouard.larroche@gmail.com'>
+              <h5
+                onClick={() => {
+                  alert('Adresse mail copié !');
+                }}>
+                edouard.larroche@gmail.com
+              </h5>
+            </CopyToClipboard>
+          </div>
+          <div className='phone'>
+            <i className='fas fa-mobile-alt' />
+            <h5>+33(0)6.64.69.97.78</h5>
+          </div>
         </div>
       </div>
     </div>

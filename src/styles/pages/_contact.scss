@@ -47,5 +47,38 @@
 
 .info {
   grid-area: 3;
+  width: 100%;
+  position: relative;
   background: $color-2;
+
+  h5 {
+    color: $color-1;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+  }
+
+  .map {
+    font-size: 1.1rem;
+    color: $black;
+    transform: translate(200px, 60px);
+  }
+
+  .phone {
+    font-size: 1.1rem;
+    color: $black;
+    transform: translate(400px, 100px);
+  }
+
+  .mail {
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 1.1rem;
+    color: $black;
+    transform: translate(300px, 80px);
+  }
+
+  i {
+    transform: translate(-25px, 20px);
+  }
 }
