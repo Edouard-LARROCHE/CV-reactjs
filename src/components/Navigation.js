@@ -36,6 +36,11 @@ export default function Navigation() {
               <span>Contact</span>
             </NavLink>
           </li>
+          <li>
+            <NavLink className='lock' exact to='admin' activeClassName='navActive'>
+              <i className='fa fa-lock' />
+            </NavLink>
+          </li>
         </ul>
       </div>
 
@@ -62,11 +67,7 @@ export default function Navigation() {
             </a>
           </li>
         </ul>
-        <div>
-          <NavLink exact to='/' activeClassName='navActive'>
-            <i className='fa fa-lock' />
-          </NavLink>
-        </div>
+
         <div className='signature'>
           <p>Edouard.CV - 2021</p>
         </div>

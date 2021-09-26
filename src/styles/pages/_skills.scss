@@ -171,6 +171,7 @@
     height: 90%;
     margin: 0 auto;
     justify-content: space-between;
+    transform: translateX(-2rem);
 
     ul {
       height: 75%;
@@ -178,6 +179,7 @@
 
       i {
         color: $color-1;
+        margin-right: 0.5rem;
       }
     }
   }
@@ -207,34 +209,6 @@
   }
 }
 
-// @media screen and (max-width: 950px) {
-//   .skillsContent {
-//     h3 {
-//       font-size: 1.2rem !important;
-//     }
-//     .languagesList {
-//       padding-top: 0.2rem !important;
-//     }
-//     p {
-//       font-size: 0.8rem;
-//     }
-//     .otherSkills,
-//     .hobbies {
-//       font-size: 0.8rem;
-//     }
-//   }
-// }
-// @media screen and (max-width: 850px) {
-//   .knowledgesContent {
-//     h4 {
-//       font-size: 0.9rem !important;
-//     }
-//     h5 {
-//       font-size: 0.6rem !important;
-//       padding: 0.2rem 1rem !important;
-//     }
-//   }
-// }
 @media screen and (max-width: 500px) {
   .skillsContent {
     display: grid !important;

@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import NotFound from './pages/NotFound';
 import Portfolio from './pages/Portfolio';
 import Skills from './pages/Skills';
+import Admin from './pages/Admin';
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
           <Route path='/skills' component={Skills} />
           <Route path='/portfolio' component={Portfolio} />
           <Route path='/contact' component={Contact} />
+          <Route path='/admin' component={Admin} />
           <Route component={NotFound} />
         </Switch>
       </BrowserRouter>

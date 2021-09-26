@@ -148,11 +148,6 @@ export default function Home() {
         <div className='content'>
           <h2>Edouard-LARROCHE</h2>
           <h3>Développeur web Full-Stack junior</h3>
-          {/* <div className='pdf'>
-            <a href='./assets/cv.pdf' target='_blank'>
-              Télécharger mon CV
-            </a>
-          </div> */}
           <div className='sphere'>
             <IconCloud
               key={v4()}
