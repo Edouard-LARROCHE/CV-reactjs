@@ -7,5 +7,78 @@
     border-radius: $borderRadius;
     position: relative;
     overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20% 45% 35%;
+    grid-template-areas:
+      '1'
+      '2'
+      '3';
+
+    .header {
+      grid-area: 1;
+      width: 100%;
+      position: relative;
+      background: $color-2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.contact-form {
+  grid-area: 2;
+  background: $color-3;
+  margin: 0 auto;
+  padding: 1rem 3rem;
+  z-index: 2;
+  border-radius: $borderRadius;
+  box-shadow: 0 2px 3px $black;
+  width: 45%;
+  min-width: 390px;
+  min-height: 200px;
+
+  .send {
+    cursor: pointer;
+  }
+}
+
+.info {
+  grid-area: 3;
+  width: 100%;
+  position: relative;
+  background: $color-2;
+
+  h5 {
+    color: $color-1;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+  }
+
+  .map {
+    font-size: 1.1rem;
+    color: $black;
+    transform: translate(200px, 60px);
+  }
+
+  .phone {
+    font-size: 1.1rem;
+    color: $black;
+    transform: translate(400px, 100px);
+  }
+
+  .mail {
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 1.1rem;
+    color: $black;
+    transform: translate(300px, 80px);
+  }
+
+  i {
+    transform: translate(-25px, 20px);
   }
 }
