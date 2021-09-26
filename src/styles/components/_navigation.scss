@@ -117,6 +117,12 @@ h3 {
     }
   }
 
+  .lock {
+    display: flex;
+    justify-content: center;
+    transform: translateY(1.5rem);
+  }
+
   .signature {
     margin-top: 3rem;
     text-align: center;

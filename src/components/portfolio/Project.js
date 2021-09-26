@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import AddIcon from '@material-ui/icons/Add';
 import VisibilityIcon from '@material-ui/icons/Visibility';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 
@@ -24,10 +23,8 @@ export default class Project extends Component {
           ))}
         </div>
         <h3>{name}</h3>
-        <img src={picture} alt='projet' />
-        <span className='infos'>
-          <AddIcon onClick={this.handleInfo} />
-        </span>
+        <img src={picture} alt='projet' onClick={this.handleInfo} />
+        <span className='infos'></span>
 
         {this.state.showInfo && (
           <div className='showInfos'>
