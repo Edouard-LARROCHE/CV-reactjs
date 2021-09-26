@@ -6,7 +6,9 @@ export default function Admin() {
   return (
     <div className='admin'>
       <Navigation />
-      <AdminLogin />
+      <div className='adminContent'>
+        <AdminLogin />
+      </div>
     </div>
   );
 }

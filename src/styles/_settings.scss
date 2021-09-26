@@ -59,7 +59,8 @@ a:visited {
 .home,
 .contact,
 .portfolio,
-.skills {
+.skills,
+.admin {
   display: flex;
 
   @media screen and (max-width: 850px) {
@@ -70,7 +71,8 @@ a:visited {
 .homeContent,
 .contactContent,
 .portfolioContent,
-.skillsContent {
+.skillsContent,
+.adminContent {
   margin-left: 0.4rem;
 
   @media screen and (max-width: 850px) {

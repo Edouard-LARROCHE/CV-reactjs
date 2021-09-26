@@ -9,12 +9,12 @@
     overflow: hidden;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 20% 80%;
+    grid-template-rows: 40% 60%;
     grid-template-areas:
       '1'
       '2';
 
-    .test {
+    h3 {
       grid-area: 1;
       width: 100%;
       position: relative;
@@ -35,7 +35,12 @@
   z-index: 2;
   border-radius: $borderRadius;
   box-shadow: 0 2px 3px $black;
+  height: 20%;
   width: 45%;
   min-width: 390px;
   min-height: 200px;
+
+  .unLock {
+    cursor: pointer;
+  }
 }
