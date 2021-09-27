@@ -3,6 +3,7 @@ import Navigation from '../components/Navigation';
 import allIcons from 'simple-icons';
 import { v4 } from 'uuid';
 import { IconCloud } from 'react-icon-cloud';
+import SocialNet from '../components/SocialNet';
 
 export default function Home() {
   const tagCanvasOptions = {
@@ -150,6 +151,7 @@ export default function Home() {
           <h3>Développeur web Full-Stack junior</h3>
           <div className='sphere'>
             <IconCloud
+              className='icons'
               key={v4()}
               id={'icon'}
               minContrastRatio={1}
@@ -161,6 +163,9 @@ export default function Home() {
             />
           </div>
         </div>
+      </div>
+      <div className='socialNet'>
+        <SocialNet />
       </div>
     </div>
   );

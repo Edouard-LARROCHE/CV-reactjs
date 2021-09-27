@@ -1,5 +1,6 @@
 .portfolio {
   .portfolioContent {
+    background: $white;
     width: 100%;
     display: grid;
     min-height: $minHeight;
@@ -43,7 +44,7 @@
           height: 0.9rem;
           width: 0.9rem;
           border-radius: 50%;
-          border: 2px solid $color-1;
+          border: 2px solid $color-3;
           cursor: pointer;
           transition: 0.3s;
         }
@@ -58,7 +59,7 @@
           border-radius: 50%;
           cursor: pointer;
           transition: 0.3s;
-          background: $color-1;
+          background: $color-2;
           transform: scale(0);
           transform-origin: center;
         }
@@ -195,6 +196,7 @@
     }
   }
 }
+
 @media (max-width: 650px) and (min-width: 521px) {
   .portfolioContent {
     .project {
@@ -217,11 +219,12 @@
     grid-template-rows: 1fr !important;
 
     .project {
-      grid-template-rows: 30px 40px 80px 40px !important;
+      grid-template-rows: 30px 40px 80px 50px !important;
       width: 98% !important;
+      height: 31% !important;
 
       img {
-        height: 100% !important;
+        height: 15rem !important;
       }
     }
   }

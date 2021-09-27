@@ -10,8 +10,16 @@ export default function FormContact() {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
 
+  const succesMessage = () => {
+    const formMess = document.querySelector('.form-message');
+    formMess.innerHTML = 'Message envoyé. Je vous contact dès que possible. Cordialement.';
+    formMess.style.background = '#e5e5db';
+    formMess.style.opacity = '1';
+  };
+
   const sendBack = (templateId, variables) => {
     window.emailjs.send('service_ioi4pk3', templateId, variables).then(() => {
+      succesMessage();
       setName('');
       setCompany('');
       setTel('');
@@ -54,9 +62,6 @@ export default function FormContact() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    failEmail();
-    failMessage();
-
     if (name && isEmail() && message) {
       sendBack('template_gvs6rqv', {
         name,
@@ -66,6 +71,8 @@ export default function FormContact() {
         message,
       });
     } else {
+      failEmail();
+      failMessage();
     }
   };
   return (
@@ -101,6 +108,7 @@ export default function FormContact() {
             placeholder='Téléphone'
             value={tel}
           />
+          <div className='email-err' />
 
           <TextField
             style={{ width: '20rem', paddingBottom: '1rem' }}
@@ -113,13 +121,11 @@ export default function FormContact() {
             value={email}
           />
 
-          <div className='email-err' />
-
           <TextField
             style={{ width: '20rem', paddingBottom: '1rem' }}
             multiline
             rows={2}
-            rowsMax={10}
+            rowsMax={4}
             type='textarea'
             id='message'
             name='message'
@@ -131,7 +137,9 @@ export default function FormContact() {
           <div className='message-err' />
 
           <SendIcon className='send' onClick={handleSubmit} />
+          <div className='form-message' />
         </form>
+
         <div className='info'>
           <div className='map'>
             <i class='fas fa-map-marker-alt' />
