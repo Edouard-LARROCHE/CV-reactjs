@@ -150,6 +150,7 @@ export default function Home() {
           <h3>Développeur web Full-Stack junior</h3>
           <div className='sphere'>
             <IconCloud
+              className='icons'
               key={v4()}
               id={'icon'}
               minContrastRatio={1}

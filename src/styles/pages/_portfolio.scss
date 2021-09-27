@@ -43,7 +43,7 @@
           height: 0.9rem;
           width: 0.9rem;
           border-radius: 50%;
-          border: 2px solid $color-1;
+          border: 2px solid $color-3;
           cursor: pointer;
           transition: 0.3s;
         }
@@ -58,7 +58,7 @@
           border-radius: 50%;
           cursor: pointer;
           transition: 0.3s;
-          background: $color-1;
+          background: $color-2;
           transform: scale(0);
           transform-origin: center;
         }

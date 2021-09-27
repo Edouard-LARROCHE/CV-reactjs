@@ -11,7 +11,7 @@
     .content {
       position: absolute;
       top: 5%;
-      left: 6%;
+      left: 10%;
       font-family: $font-1;
 
       h2 {
@@ -38,6 +38,16 @@
 @media screen and (max-width: 850px) {
   .homeContent {
     margin: 0 !important;
+    height: 50rem !important;
+
+    .content {
+      right: 9%;
+    }
+
+    .h2 h3 {
+      display: flex;
+      justify-content: center;
+    }
   }
 }
 
@@ -50,5 +60,10 @@
     .sphere {
       margin-bottom: 5rem !important;
     }
+  }
+}
+@media screen and (max-width: 580px) {
+  .homeContent {
+    height: 25rem !important;
   }
 }
