@@ -209,11 +209,26 @@
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 581px) and (max-width: 736px) {
+  .skillsContent {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr 1fr !important;
+
+    .otherSkills {
+      height: 12rem;
+    }
+
+    .hobbies {
+      height: 12rem;
+    }
+  }
+}
+
+@media screen and (max-width: 580px) {
   .skillsContent {
     display: grid !important;
     grid-template-columns: 1fr !important;
-    grid-template-rows: 1fr 1fr 180px 180px !important;
+    grid-template-rows: 600px 800px 300px 200px !important;
 
     .languages {
       grid-area: 1 !important;
@@ -221,10 +236,15 @@
     .experience {
       grid-area: 2 !important;
       margin-left: 0 !important;
+      grid-template-rows: 10% 1fr 1fr 1fr 1fr !important;
     }
     .otherSkills {
       grid-area: 3 !important;
       margin-right: 0 !important;
+
+      .list {
+        transform: translateX(-25px) !important;
+      }
     }
     .hobbies {
       grid-area: 4 !important;
