@@ -3,6 +3,7 @@ import Navigation from '../components/Navigation';
 import allIcons from 'simple-icons';
 import { v4 } from 'uuid';
 import { IconCloud } from 'react-icon-cloud';
+import SocialNet from '../components/SocialNet';
 
 export default function Home() {
   const tagCanvasOptions = {
@@ -162,6 +163,9 @@ export default function Home() {
             />
           </div>
         </div>
+      </div>
+      <div className='socialNet'>
+        <SocialNet />
       </div>
     </div>
   );

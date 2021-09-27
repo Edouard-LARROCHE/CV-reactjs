@@ -79,3 +79,18 @@ a:visited {
     margin-left: 0 !important;
   }
 }
+
+.socialNet {
+  display: none;
+}
+
+@media screen and (max-width: 850px) {
+  .socialNet {
+    background: $color-2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50px;
+    width: 100%;
+  }
+}

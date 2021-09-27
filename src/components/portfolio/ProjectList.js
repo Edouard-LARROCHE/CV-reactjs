@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { portfolioData } from '../../data/portfolioData';
+import SocialNet from '../SocialNet';
 import Project from './Project';
 
 export default class ProjectList extends Component {

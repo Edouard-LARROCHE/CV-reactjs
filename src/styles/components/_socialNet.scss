@@ -1,0 +1,24 @@
+.socialNetwork {
+  grid-area: 3;
+
+  ul {
+    display: flex;
+    width: 264px;
+    padding: 0 14px;
+    justify-content: space-between;
+
+    li {
+      font-size: 1.4rem;
+      background: $color-3;
+      color: $color-2;
+      border-radius: 50%;
+      padding: 0.5rem 0.8rem;
+      transition: 0.3s;
+      cursor: pointer;
+
+      &:hover {
+        background: $color-2;
+      }
+    }
+  }
+}
