@@ -10,7 +10,7 @@ export default function AdminLogin() {
 
         <form className='adminForm'>
           <TextField
-            style={{ width: '20rem', paddingBottom: '1rem' }}
+            style={{ width: '18rem', paddingBottom: '1rem' }}
             type='email'
             id='email'
             placeholder='Adresse mail *'
@@ -22,7 +22,7 @@ export default function AdminLogin() {
           <div className='email-err' />
 
           <TextField
-            style={{ width: '20rem', paddingBottom: '1rem' }}
+            style={{ width: '18rem', paddingBottom: '1rem' }}
             type='password'
             id='password'
             placeholder='Mot de passe *'
