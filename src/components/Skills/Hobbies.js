@@ -19,7 +19,7 @@ export default function hobbies() {
         </li>
         <li className='hobbiy'>
           <i className='fas fa-video' />
-          <span>7éme art</span>
+          <span>7ème art</span>
         </li>
       </ul>
     </div>

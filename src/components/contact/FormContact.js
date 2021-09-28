@@ -82,7 +82,7 @@ export default function FormContact() {
 
         <form className='contact-form'>
           <TextField
-            style={{ width: '20rem', paddingBottom: '1rem' }}
+            style={{ width: '18rem', paddingBottom: '1rem' }}
             type='text'
             id='name'
             name='name'
@@ -91,7 +91,7 @@ export default function FormContact() {
             value={name}
           />
           <TextField
-            style={{ width: '20rem', paddingBottom: '1rem' }}
+            style={{ width: '18rem', paddingBottom: '1rem' }}
             type='text'
             id='company'
             name='company'
@@ -100,7 +100,7 @@ export default function FormContact() {
             value={company}
           />
           <TextField
-            style={{ width: '20rem', paddingBottom: '1rem' }}
+            style={{ width: '18rem', paddingBottom: '1rem' }}
             type='tel'
             id='tel'
             name='tel'
@@ -111,7 +111,7 @@ export default function FormContact() {
           <div className='email-err' />
 
           <TextField
-            style={{ width: '20rem', paddingBottom: '1rem' }}
+            style={{ width: '18rem', paddingBottom: '1rem' }}
             type='email'
             id='email'
             autoComplete='off'
@@ -122,7 +122,7 @@ export default function FormContact() {
           />
 
           <TextField
-            style={{ width: '20rem', paddingBottom: '1rem' }}
+            style={{ width: '18rem', paddingBottom: '1rem' }}
             multiline
             rows={2}
             rowsMax={4}
