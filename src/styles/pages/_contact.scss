@@ -106,9 +106,9 @@
   box-shadow: 0 0 2px rgba(51, 51, 51, 0.3);
 }
 
-@media screen and (min-width: 375px) and (max-width: 400px) {
+@media screen and (min-width: 375px) and (max-width: 450px) {
   .header {
-    padding-bottom: 2rem;
+    padding: 2rem 3.9rem 2rem 0;
   }
   .info {
     height: 17rem;
@@ -120,16 +120,7 @@
   }
 }
 
-@media screen and (min-width: 376px) and (max-width: 414px) {
-  .header {
-    padding-bottom: 2rem;
-  }
-  .info {
-    height: 17rem;
-  }
-}
-
-@media screen and (min-width: 415px) and (max-width: 850px) {
+@media screen and (min-width: 451px) and (max-width: 850px) {
   .header {
     padding-bottom: 2rem;
   }
