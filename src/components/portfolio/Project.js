@@ -24,7 +24,6 @@ export default class Project extends Component {
         </div>
         <h3>{name}</h3>
         <img src={picture} alt='projet' onClick={this.handleInfo} />
-        <span className='infos'></span>
 
         {this.state.showInfo && (
           <div className='showInfos'>
