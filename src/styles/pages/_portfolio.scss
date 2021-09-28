@@ -82,6 +82,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-items: center;
 
     .project {
       background: $color-2;
@@ -89,7 +90,7 @@
       margin: 0.5rem 0 0 0;
       text-align: center;
       width: 32%;
-      height: 24rem;
+      height: 20rem;
       padding: 0.3rem;
       box-shadow: $shadow;
       display: grid;
@@ -124,10 +125,10 @@
     }
     img {
       grid-area: 3;
-      object-fit: cover;
       margin: 0 auto;
-      width: 100%;
       height: 100%;
+      max-width: 100%;
+      max-height: 98%;
       box-shadow: 0 2px 6px $black;
       border-radius: 3px;
       @include verticalCenter;
@@ -197,34 +198,27 @@
   }
 }
 
-@media (max-width: 650px) and (min-width: 521px) {
-  .portfolioContent {
-    .project {
-      width: 49% !important;
-
-      i {
-        font-size: 1rem;
-      }
-    }
-    .infosContent {
-      width: 100% !important;
-    }
-  }
-}
-@media (max-width: 520px) {
+@media (min-width: 375px) and (max-width: 580px) {
   .radioDisplay {
     display: none !important;
   }
-  .portfolioContent {
-    grid-template-rows: 1fr !important;
+  .portfolio {
+    .portfolioContent {
+      grid-template-rows: 1fr !important;
 
-    .project {
-      grid-template-rows: 30px 40px 80px 50px !important;
-      width: 98% !important;
-      height: 31% !important;
+      .project {
+        grid-template-rows: 30px 40px 80px 50px !important;
+        width: 98% !important;
+        height: 31% !important;
 
-      img {
-        height: 15rem !important;
+        img {
+          min-height: 15rem !important;
+          max-width: 20rem !important;
+        }
+        h3 {
+          position: relative;
+          top: 1rem;
+        }
       }
     }
   }

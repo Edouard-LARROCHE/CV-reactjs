@@ -8,7 +8,7 @@ export default function OthersSkills() {
         <ul>
           <li>
             <i className='fas fa-check-square' />
-            Méthodes agiles (SRUM)
+            Méthodes agiles (SCRUM)
           </li>
           <li>
             <i className='fas fa-check-square' />

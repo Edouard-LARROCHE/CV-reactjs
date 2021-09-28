@@ -2,33 +2,33 @@ import React from 'react';
 import { TextField } from '@material-ui/core';
 import LockOpenIcon from '@material-ui/icons/LockOpen';
 
-export default function AdminLogin() {
+export default function AdminLogin({ email, setEmail, password, setPassword, handleLogin }) {
   return (
     <div className='admin'>
       <div className='adminContent'>
         <h3> administration du site </h3>
 
-        <form className='adminForm'>
+        <form className='adminForm' onSubmit={handleLogin}>
           <TextField
-            style={{ width: '20rem', paddingBottom: '1rem' }}
+            style={{ width: '18rem', paddingBottom: '1rem' }}
             type='email'
             id='email'
             placeholder='Adresse mail *'
             autoComplete='off'
             required
-            // value={email}
-            // onChange={(e) => setEmail(e.target.value)}
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
           />
           <div className='email-err' />
 
           <TextField
-            style={{ width: '20rem', paddingBottom: '1rem' }}
+            style={{ width: '18rem', paddingBottom: '1rem' }}
             type='password'
             id='password'
             placeholder='Mot de passe *'
             required
-            // value={password}
-            // onChange={(e) => setPassword(e.target.value)}
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
           />
           <div className='password-err' />
 
