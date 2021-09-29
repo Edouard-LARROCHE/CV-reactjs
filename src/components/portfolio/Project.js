@@ -3,33 +3,38 @@ import VisibilityIcon from '@material-ui/icons/Visibility';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 
 export default class Project extends Component {
-  state = {
-    showInfo: false,
-  };
-
-  handleInfo = () => {
-    this.setState({
-      showInfo: !this.state.showInfo,
-    });
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      showInfo: true,
+    };
+    this.handleClick = this.handleClick.bind(this);
+  }
+  handleClick() {
+    this.setState((state) => ({
+      showInfo: !state.showInfo,
+    }));
+  }
 
   render() {
-    let { name, languagesIcons, source, info, picture } = this.props.item;
+    const { name, languagesIcons, source, info, picture } = this.props.item;
     return (
-      <div className='project'>
-        <div className='icons'>
-          {languagesIcons.map((icon) => (
-            <i className={icon} key={icon} />
-          ))}
-        </div>
-        <h3>{name}</h3>
-        <img src={picture} alt='projet' onClick={this.handleInfo} />
-
-        {this.state.showInfo && (
+      <>
+        {this.state.showInfo ? (
+          <div className='project' onClick={this.handleClick}>
+            <div className='icons'>
+              {languagesIcons.map((icon) => (
+                <i className={icon} key={icon} />
+              ))}
+            </div>
+            <h3>{name}</h3>
+            <img src={picture} alt='projet' />
+          </div>
+        ) : (
           <div className='showInfos'>
             <div className='infosContent'>
               <div className='head'>
-                <ArrowBackIosIcon className='back' onClick={this.handleInfo} />
+                <ArrowBackIosIcon className='back' onClick={this.handleClick} />
                 <h2> {name} </h2>
               </div>
               <p className='text'> {info} </p>
@@ -39,7 +44,7 @@ export default class Project extends Component {
             </div>
           </div>
         )}
-      </div>
+      </>
     );
   }
 }

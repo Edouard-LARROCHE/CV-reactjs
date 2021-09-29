@@ -136,63 +136,63 @@
     }
 
     .showInfos {
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      background: rgba(0, 0, 0, 0.507);
-      animation: popup 0.1s ease forwards;
-      transform-origin: center;
+      // position: absolute;
+      // top: 0;
+      // left: 0;
+      // bottom: 0;
+      // right: 0;
+      // background: rgba(0, 0, 0, 0.507);
+      // animation: popup 0.1s ease forwards;
+      // transform-origin: center;
 
       .infosContent {
-        position: relative;
-        top: 25%;
-        width: 550px;
-        margin: 0 auto;
-        background: $color-3;
-        border-radius: $borderRadius;
-        padding: 2rem;
-        box-shadow: 0 10px 10px #333;
-        animation: popup 0.3s ease forwards;
-        transform: scale(0);
-        transform-origin: center;
+        // position: relative;
+        // top: 25%;
+        // width: 550px;
+        // margin: 0 auto;
+        // background: $color-3;
+        // border-radius: $borderRadius;
+        // padding: 2rem;
+        // box-shadow: 0 10px 10px #333;
+        // animation: popup 0.3s ease forwards;
+        // transform: scale(0);
+        // transform-origin: center;
 
-        @keyframes popup {
-          to {
-            transform: scale(1);
-          }
-        }
+        // @keyframes popup {
+        //   to {
+        //     transform: scale(1);
+        //   }
+        // }
       }
       .head {
-        display: flex;
-        justify-content: center;
-        margin: 0.5rem 0;
+        // display: flex;
+        // justify-content: center;
+        // margin: 0.5rem 0;
       }
       h2 {
-        font-family: $font-1;
-        text-decoration: underline;
-        text-align: center;
-        margin-bottom: 1rem;
-        letter-spacing: 0.2rem;
-        color: $black;
-        text-transform: uppercase;
+        // font-family: $font-1;
+        // text-decoration: underline;
+        // text-align: center;
+        // margin-bottom: 1rem;
+        // letter-spacing: 0.2rem;
+        // color: $black;
+        // text-transform: uppercase;
       }
 
       .text {
-        text-align: justify;
-        padding-bottom: 1rem;
+        // text-align: justify;
+        // padding-bottom: 1rem;
       }
 
       .back {
-        transform: translate(-150px, 5px);
-        cursor: pointer;
+        //   transform: translate(-150px, 5px);
+        //   cursor: pointer;
       }
       .show {
-        display: flex;
-        justify-content: center;
-        transform: translate(230px, 15px);
-        cursor: pointer;
+        // display: flex;
+        // justify-content: center;
+        // transform: translate(230px, 15px);
+        // cursor: pointer;
       }
     }
   }
