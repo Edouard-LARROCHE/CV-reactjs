@@ -15,7 +15,8 @@ export default function Admin() {
     }
   }, [auth]);
 
-  const handleLogin = () => {
+  const handleLogin = (e) => {
+    e.preventDefault();
     setEmail('');
     setPassword('');
     firebase

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { TextField } from '@material-ui/core';
 import LockOpenIcon from '@material-ui/icons/LockOpen';
 
@@ -6,7 +7,7 @@ export default function AdminLogin({ email, setEmail, password, setPassword, han
   return (
     <div className='admin'>
       <div className='adminContent'>
-        <h3> administration du site </h3>
+        <h3> Administration du site </h3>
 
         <form className='adminForm' onSubmit={handleLogin}>
           <TextField
@@ -38,3 +39,8 @@ export default function AdminLogin({ email, setEmail, password, setPassword, han
     </div>
   );
 }
+
+AdminLogin.propTypes = {
+  setEmail: PropTypes.func.isRequired,
+  setPassword: PropTypes.func.isRequired,
+};

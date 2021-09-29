@@ -1,6 +1,6 @@
 .portfolio {
   .portfolioContent {
-    background: $white;
+    background: $color-2;
     width: 100%;
     display: grid;
     min-height: $minHeight;
@@ -94,7 +94,7 @@
       padding: 0.3rem;
       box-shadow: $shadow;
       display: grid;
-      grid-template-rows: 15% 15% 70%;
+      grid-template-rows: 20% 15% 65%;
       grid-template-areas:
         '1'
         '2'
@@ -104,7 +104,7 @@
       grid-area: 2;
       display: flex;
       justify-content: center;
-      @include verticalCenter;
+      align-items: flex-start;
 
       i {
         font-size: 1.2rem;
@@ -136,69 +136,61 @@
     }
 
     .showInfos {
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      background: rgba(0, 0, 0, 0.507);
-      animation: popup 0.1s ease forwards;
-      transform-origin: center;
+      background: $color-2;
+      border-radius: $borderRadius;
+      margin: 0.5rem 0 0 0;
+      text-align: center;
+      width: 32%;
+      height: 20rem;
+      padding: 0.3rem;
+      box-shadow: $shadow;
+      display: grid;
+      grid-template-rows: 20% 65% 15%;
+      grid-template-areas:
+        '1'
+        '2'
+        '3';
 
-      .infosContent {
-        position: relative;
-        top: 25%;
-        width: 550px;
-        margin: 0 auto;
-        background: $color-3;
-        border-radius: $borderRadius;
-        padding: 2rem;
-        box-shadow: 0 10px 10px #333;
-        animation: popup 0.3s ease forwards;
-        transform: scale(0);
-        transform-origin: center;
-
-        @keyframes popup {
-          to {
-            transform: scale(1);
-          }
-        }
-      }
-      .head {
+      h3 {
+        grid-area: 1;
         display: flex;
         justify-content: center;
-        margin: 0.5rem 0;
-      }
-      h2 {
-        font-family: $font-1;
-        text-decoration: underline;
-        text-align: center;
-        margin-bottom: 1rem;
-        letter-spacing: 0.2rem;
         color: $black;
-        text-transform: uppercase;
+        text-decoration: underline;
+        font-family: $font-1;
+        font-size: 1.2rem;
+        @include verticalCenter;
       }
 
       .text {
-        text-align: justify;
-        padding-bottom: 1rem;
+        grid-area: 2;
+        text-align: center;
       }
 
-      .back {
-        transform: translate(-150px, 5px);
-        cursor: pointer;
-      }
       .show {
+        font-size: 0.2rem;
+        grid-area: 3;
         display: flex;
-        justify-content: center;
-        transform: translate(230px, 15px);
-        cursor: pointer;
+        align-items: center;
+        justify-content: space-around;
+
+        li {
+          background: $color-3;
+          border-radius: 50%;
+          padding: 0.3rem 0.5rem;
+          transition: 0.3s;
+          cursor: pointer;
+
+          &:hover {
+            background: $color-2;
+          }
+        }
       }
     }
   }
 }
 
-@media (min-width: 375px) and (max-width: 580px) {
+@media (min-width: 360px) and (max-width: 580px) {
   .radioDisplay {
     display: none !important;
   }
@@ -209,16 +201,28 @@
       .project {
         grid-template-rows: 30px 40px 80px 50px !important;
         width: 98% !important;
-        height: 31% !important;
+        height: 35% !important;
+
+        .icons {
+          display: flex !important;
+          justify-content: center !important;
+          align-items: center !important;
+        }
 
         img {
-          min-height: 15rem !important;
+          min-height: 16rem !important;
           max-width: 20rem !important;
         }
         h3 {
-          position: relative;
-          top: 1rem;
+          position: relative !important;
+          top: 1rem !important;
         }
+      }
+
+      .showInfos {
+        grid-template-rows: 20% 65% 15%;
+        width: 98% !important;
+        height: 35% !important;
       }
     }
   }
