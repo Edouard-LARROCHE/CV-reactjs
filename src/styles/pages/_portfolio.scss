@@ -190,7 +190,7 @@
   }
 }
 
-@media (min-width: 375px) and (max-width: 580px) {
+@media (min-width: 360px) and (max-width: 580px) {
   .radioDisplay {
     display: none !important;
   }
@@ -201,16 +201,28 @@
       .project {
         grid-template-rows: 30px 40px 80px 50px !important;
         width: 98% !important;
-        height: 31% !important;
+        height: 35% !important;
+
+        .icons {
+          display: flex !important;
+          justify-content: center !important;
+          align-items: center !important;
+        }
 
         img {
-          min-height: 15rem !important;
+          min-height: 16rem !important;
           max-width: 20rem !important;
         }
         h3 {
           position: relative !important;
           top: 1rem !important;
         }
+      }
+
+      .showInfos {
+        grid-template-rows: 20% 65% 15%;
+        width: 98% !important;
+        height: 35% !important;
       }
     }
   }
