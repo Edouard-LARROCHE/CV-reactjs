@@ -94,3 +94,18 @@ a:visited {
     width: 100%;
   }
 }
+
+.scrollTop {
+  display: none;
+}
+
+@media screen and (max-width: 580px) {
+  .scrollTop {
+    background: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 30px;
+    width: 100%;
+  }
+}

@@ -5,6 +5,7 @@ import Hobbies from '../components/Skills/Hobbies';
 import Languages from '../components/Skills/Languages';
 import OthersSkills from '../components/Skills/OthersSkills';
 import SocialNet from '../components/SocialNet';
+import ScrollTop from '../components/ScrollTop';
 
 export default function Skills() {
   return (
@@ -15,6 +16,9 @@ export default function Skills() {
         <Experience />
         <Hobbies />
         <OthersSkills />
+      </div>
+      <div className='scrollTop'>
+        <ScrollTop />
       </div>
       <div className='socialNet'>
         <SocialNet />
