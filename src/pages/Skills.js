@@ -17,7 +17,9 @@ export default function Skills() {
         <Hobbies />
         <OthersSkills />
       </div>
-      <ScrollTop />
+      <div className='scrollTop'>
+        <ScrollTop />
+      </div>
       <div className='socialNet'>
         <SocialNet />
       </div>

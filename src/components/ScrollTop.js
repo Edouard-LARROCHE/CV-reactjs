@@ -1,4 +1,5 @@
 import React from 'react';
+import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
 
 export default function ScrollTop() {
   const scrollTop = () => {
@@ -7,7 +8,7 @@ export default function ScrollTop() {
 
   return (
     <div>
-      <h6 onClick={scrollTop}> scroll </h6>
+      <KeyboardArrowUpIcon className='scrool-top' onClick={scrollTop} />
     </div>
   );
 }
