@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import AdminHome from './adminHome/AdminHome';
 import AdminLogin from './AdminLogin';
-import firebase from '../firebase';
+import firebase from '../../firebase';
 import 'firebase/auth';
 
 export default function Admin() {
@@ -15,8 +15,7 @@ export default function Admin() {
     }
   }, [auth]);
 
-  const handleLogin = (e) => {
-    e.preventDefault();
+  const handleLogin = () => {
     setEmail('');
     setPassword('');
     firebase
