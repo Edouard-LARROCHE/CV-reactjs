@@ -13,8 +13,6 @@ export default function FormContact() {
   const succesMessage = () => {
     const formMess = document.querySelector('.form-message');
     formMess.innerHTML = 'Message envoyé. Je vous contact dès que possible. Cordialement.';
-    formMess.style.background = '#e5e5db';
-    formMess.style.opacity = '1';
   };
 
   const sendBack = (templateId, variables) => {

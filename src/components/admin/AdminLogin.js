@@ -4,6 +4,21 @@ import { TextField } from '@material-ui/core';
 import LockOpenIcon from '@material-ui/icons/LockOpen';
 
 export default function AdminLogin({ email, setEmail, password, setPassword, handleLogin }) {
+  const failLogin = () => {
+    const errLogin = document.querySelector('.fail-login');
+    errLogin.innerHTML = 'Adresse mail ou mot de passe invalide';
+    if (handleLogin()) {
+      errLogin.style.display = 'none';
+    } else {
+      errLogin.style.display = 'block';
+    }
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    failLogin();
+  };
+
   return (
     <div className='admin'>
       <div className='adminContent'>
@@ -20,7 +35,6 @@ export default function AdminLogin({ email, setEmail, password, setPassword, han
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
-          <div className='email-err' />
 
           <TextField
             style={{ width: '18rem', paddingBottom: '1rem' }}
@@ -31,9 +45,9 @@ export default function AdminLogin({ email, setEmail, password, setPassword, han
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
-          <div className='password-err' />
+          <div className='fail-login' />
 
-          <LockOpenIcon className='unLock' />
+          <LockOpenIcon className='unLock' onclick={handleSubmit} />
         </form>
       </div>
     </div>
@@ -41,6 +55,9 @@ export default function AdminLogin({ email, setEmail, password, setPassword, han
 }
 
 AdminLogin.propTypes = {
+  email: PropTypes.string.isRequired,
   setEmail: PropTypes.func.isRequired,
+  password: PropTypes.string.isRequired,
   setPassword: PropTypes.func.isRequired,
+  handleLogin: PropTypes.func.isRequired,
 };

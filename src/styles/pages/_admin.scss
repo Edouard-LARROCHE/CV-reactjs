@@ -39,6 +39,11 @@
   }
 }
 
+.fail-login {
+  color: $black;
+  font-size: 0.9rem;
+}
+
 @media screen and (min-width: 350px) and (max-width: 850px) {
   h3 {
     top: 2rem !important;
