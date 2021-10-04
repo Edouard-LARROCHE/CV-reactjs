@@ -20,7 +20,7 @@ export default function OthersSkills() {
           </li>
           <li>
             <i className='fas fa-check-square' />
-            Figma
+            NodeJS
           </li>
         </ul>
         <ul>

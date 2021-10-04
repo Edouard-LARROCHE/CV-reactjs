@@ -227,3 +227,21 @@
     }
   }
 }
+
+@media screen and (min-width: 581px) and (max-width: 850px) {
+  .portfolio {
+    .portfolioContent {
+      grid-template-rows: 1fr !important;
+      .projects {
+        background: $color-2 !important;
+
+        .project {
+          height: 17rem !important;
+        }
+        .showInfos {
+          height: 17rem !important;
+        }
+      }
+    }
+  }
+}

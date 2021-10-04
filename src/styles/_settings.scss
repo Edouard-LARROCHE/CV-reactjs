@@ -86,12 +86,15 @@ a:visited {
 
 @media screen and (max-width: 850px) {
   .socialNet {
-    background: $color-3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 50px;
-    width: 100%;
+    background: $color-3 !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: 50px !important;
+    min-height: 50px !important;
+    width: 100% !important;
+    position: relative !important;
+    bottom: 0 !important;
   }
 }
 
@@ -101,11 +104,11 @@ a:visited {
 
 @media screen and (max-width: 580px) {
   .scrollTop {
-    background: $white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 30px;
-    width: 100%;
+    background: $white !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    min-height: 30px !important;
+    width: 100% !important;
   }
 }
