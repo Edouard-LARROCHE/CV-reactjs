@@ -232,13 +232,13 @@
       }
 
       .showInfos {
-        grid-template-rows: 20% 65% 15%;
+        grid-template-rows: 20% 15% 55% 10%;
         width: 98% !important;
         max-height: 100% !important;
       }
       .text {
         text-align: center;
-        margin: 0 1.5rem 0 1.5rem;
+        margin: 0 1.5rem 0 1.5rem !important;
       }
     }
   }
@@ -252,10 +252,14 @@
         background: $color-2 !important;
 
         .project {
-          height: 17rem !important;
+          height: 21rem !important;
         }
         .showInfos {
-          height: 17rem !important;
+          grid-template-rows: 20% 15% 55% 10% !important;
+          height: 21rem !important;
+        }
+        .text {
+          margin: 0 0.5rem 0 0.5rem !important;
         }
       }
     }

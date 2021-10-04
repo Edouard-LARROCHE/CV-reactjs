@@ -46,7 +46,7 @@ export default function AdminLogin({ email, setEmail, password, setPassword, han
           />
           <div className='fail-login' />
 
-          <LockOpenIcon className='unLock' onclick={handleSubmit} />
+          <LockOpenIcon className='unLock' onClick={handleSubmit} />
         </form>
       </div>
     </div>
