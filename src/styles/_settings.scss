@@ -90,8 +90,11 @@ a:visited {
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
+    height: 50px !important;
     min-height: 50px !important;
     width: 100% !important;
+    position: relative !important;
+    bottom: 0 !important;
   }
 }
 

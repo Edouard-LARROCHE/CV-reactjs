@@ -13,9 +13,9 @@ export default function Portfolio() {
         <div className='scrollTop'>
           <ScrollTop />
         </div>
-        <div className='socialNet'>
-          <SocialNet />
-        </div>
+      </div>
+      <div className='socialNet'>
+        <SocialNet />
       </div>
     </div>
   );
