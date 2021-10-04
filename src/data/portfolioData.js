@@ -32,7 +32,7 @@ export const portfolioData = [
     languages: ['javascript', 'css', 'html5'],
     languagesIcons: ['fab fa-js', 'fab fa-css3-alt', 'fab fa-html5'],
     source: 'https://github.com/JeromeShaaban/WildersPortfolio',
-    info: "Le premier projet sur lequel j'ai travaillé durant ma formation à la WCS. Un des plus classique, créé uniquement en html/css.  ",
+    info: "Le premier projet sur lequel j'ai travaillé durant ma formation à la WCS. Un des plus classique, créé uniquement en html/css. Avec un peu de javascript, juste un peu.  ",
     picture: './assets/wildcodeschool.png',
   },
   {
