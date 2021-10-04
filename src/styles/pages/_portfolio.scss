@@ -85,7 +85,7 @@
     align-items: center;
 
     .project {
-      background: $color-2;
+      background: $color-3;
       border-radius: $borderRadius;
       margin: 0.5rem 0 0 0;
       text-align: center;
@@ -136,7 +136,7 @@
     }
 
     .showInfos {
-      background: $color-2;
+      background: $color-3;
       border-radius: $borderRadius;
       margin: 0.5rem 0 0 0;
       text-align: center;
@@ -145,11 +145,12 @@
       padding: 0.3rem;
       box-shadow: $shadow;
       display: grid;
-      grid-template-rows: 20% 65% 15%;
+      grid-template-rows: 20% 15% 55% 10%;
       grid-template-areas:
         '1'
         '2'
-        '3';
+        '3'
+        '4';
 
       h3 {
         grid-area: 1;
@@ -162,14 +163,25 @@
         @include verticalCenter;
       }
 
-      .text {
+      .icons {
         grid-area: 2;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+      }
+
+      .text {
+        grid-area: 3;
+        font-size: 0.9rem;
+        letter-spacing: 0.05rem;
+        color: $color-1;
         text-align: center;
+        margin: 0 1.5rem 0 1.5rem;
       }
 
       .show {
         font-size: 0.2rem;
-        grid-area: 3;
+        grid-area: 4;
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -220,9 +232,13 @@
       }
 
       .showInfos {
-        grid-template-rows: 20% 65% 15%;
+        grid-template-rows: 20% 15% 55% 10%;
         width: 98% !important;
         max-height: 100% !important;
+      }
+      .text {
+        text-align: center;
+        margin: 0 1.5rem 0 1.5rem !important;
       }
     }
   }
@@ -236,10 +252,14 @@
         background: $color-2 !important;
 
         .project {
-          height: 17rem !important;
+          height: 21rem !important;
         }
         .showInfos {
-          height: 17rem !important;
+          grid-template-rows: 20% 15% 55% 10% !important;
+          height: 21rem !important;
+        }
+        .text {
+          margin: 0 0.5rem 0 0.5rem !important;
         }
       }
     }
