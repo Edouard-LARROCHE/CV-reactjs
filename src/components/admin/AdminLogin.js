@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { TextField } from '@material-ui/core';
 import LockOpenIcon from '@material-ui/icons/LockOpen';
 
@@ -53,11 +52,3 @@ export default function AdminLogin({ email, setEmail, password, setPassword, han
     </div>
   );
 }
-
-AdminLogin.propTypes = {
-  email: PropTypes.string.isRequired,
-  setEmail: PropTypes.func.isRequired,
-  password: PropTypes.string.isRequired,
-  setPassword: PropTypes.func.isRequired,
-  handleLogin: PropTypes.func.isRequired,
-};
