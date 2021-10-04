@@ -227,3 +227,16 @@
     }
   }
 }
+
+@media screen and (min-width: 581px) and (max-width: 850px) {
+  .projects {
+    background: $color-2 !important;
+
+    .project {
+      height: 15rem !important;
+    }
+    .showInfos {
+      height: 15rem !important;
+    }
+  }
+}
