@@ -23,7 +23,7 @@ export const portfolioData = [
     languages: ['javascript', 'css', 'react'],
     languagesIcons: ['fab fa-js', 'fab fa-css3-alt', 'fab fa-react'],
     source: 'https://github.com/Edouard-LARROCHE/Oovy-project-2',
-    info: 'Premier projet créé avec la bibliothèque React, en utilisant axios pour requêter une API de films. Application qui choisi un film pour vous suivant vos critères. ',
+    info: 'Premier projet créé avec la bibliothèque React, en utilisant axios pour requêter une API de films. Application qui choisi un film pour vous suivant vos critères. Filmographique bien sûr ! ',
     picture: './assets/oovy.png',
   },
   {
@@ -41,7 +41,7 @@ export const portfolioData = [
     languages: ['javascript', 'css', 'react', 'nodejs'],
     languagesIcons: ['fab fa-js', 'fab fa-css3-alt', 'fab fa-react', 'fab fa-node'],
     source: 'https://github.com/',
-    info: 'lorem ipsum odor amet, consectetuer adipiscing elit. Imperdiet erat nullam tortor quis elit lacusblandcommodo metus vestibulum tristique. Tristiquevolutpat consectetur congue lorem pharetra habitant. Massa lacus pulvinar aliquam mi tristique.',
+    info: 'lorem ipsum odor amet, consectetuer adipiscing elit. Imperdiet erat nullam tortor quis elit lacusblandcommodo metus vestibulum tristique. Tristiquevolutpat Massa lacus pulvinar aliquam mi tristique.',
     picture: './assets/nebula.jpg',
   },
 ];

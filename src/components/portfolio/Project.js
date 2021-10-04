@@ -33,6 +33,11 @@ export default class Project extends Component {
         ) : (
           <div className='showInfos'>
             <h3> {name} </h3>
+            <div className='icons'>
+              {languagesIcons.map((icon) => (
+                <i className={icon} key={icon} />
+              ))}
+            </div>
             <p className='text'> {info} </p>
             <ul className='show'>
               <li>
