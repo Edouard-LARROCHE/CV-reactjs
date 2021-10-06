@@ -122,8 +122,8 @@ export default function FormContact() {
           <TextField
             style={{ width: '18rem', paddingBottom: '1rem' }}
             multiline
-            rows={2}
-            rowsMax={4}
+            minRows={2}
+            maxRows={4}
             type='textarea'
             id='message'
             name='message'
@@ -140,7 +140,7 @@ export default function FormContact() {
 
         <div className='info'>
           <div className='map'>
-            <i class='fas fa-map-marker-alt' />
+            <i className='fas fa-map-marker-alt' />
             <h5>Région Ile De France</h5>
           </div>
           <div className='mail'>
