@@ -141,9 +141,8 @@ export default function FormContact() {
 
           <div className='message-err' />
 
-          <SendIcon className='send' onClick={handleSubmit} />
-
           <div className='form-message' />
+          <SendIcon className='send' onClick={handleSubmit} />
         </form>
 
         <div className='info'>
