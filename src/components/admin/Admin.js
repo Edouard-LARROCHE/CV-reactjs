@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import AdminHome from './adminHome/AdminHome';
 import { TextField } from '@material-ui/core';
 import LockOpenIcon from '@material-ui/icons/LockOpen';
 import firebase from '../../firebase';
@@ -8,6 +9,16 @@ export default function AdminLogin() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [auth, setAuth] = useState(false);
+
+  const failLogin = () => {
+    const errLogin = document.querySelector('.fail-login');
+    errLogin.innerHTML = 'Adresse mail ou mot de passe invalide';
+    if (handleLogin()) {
+      errLogin.style.display = 'none';
+    } else {
+      errLogin.style.display = 'block';
+    }
+  };
 
   useEffect(() => {
     if (window.localStorage.getItem('auth')) {
@@ -40,6 +51,7 @@ export default function AdminLogin() {
   const handleSubmit = (e) => {
     e.preventDefault();
     handleLogin();
+    failLogin();
   };
 
   const handleLogout = () => {
@@ -51,14 +63,7 @@ export default function AdminLogin() {
   return (
     <div>
       {auth ? (
-        <div setAuth={setAuth}>
-          <h3> Welcome Admin Home </h3>
-          <div>
-            <button type='button' onClick={handleLogout}>
-              Déconnexion
-            </button>
-          </div>
-        </div>
+        <AdminHome setAuth={setAuth} handleLogout={handleLogout} />
       ) : (
         <div className='admin'>
           <div className='adminContent'>
