@@ -1,6 +1,6 @@
 import React from 'react';
 import Navigation from '../components/Navigation';
-import AdminLogin from '../components/admin/AdminLogin';
+import AdminLogin from '../components/admin/Admin';
 import SocialNet from '../components/SocialNet';
 
 export default function Admin() {
