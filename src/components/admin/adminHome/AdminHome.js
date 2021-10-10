@@ -5,9 +5,9 @@ export default function AdminHome({ handleLogout }) {
     <div>
       <h3> Administration du site </h3>
       <div>
-        <button type='button' onClick={handleLogout}>
+        <p className='deco' onClick={handleLogout}>
           Déconnexion
-        </button>
+        </p>
       </div>
     </div>
   );
