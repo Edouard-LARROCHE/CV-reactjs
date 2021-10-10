@@ -67,8 +67,6 @@ export default function AdminLogin() {
       ) : (
         <div className='admin'>
           <div className='adminContent'>
-            <h3> Administration du site </h3>
-
             <form className='adminForm' onSubmit={handleLogin}>
               <TextField
                 style={{ width: '18rem', paddingBottom: '1rem' }}
