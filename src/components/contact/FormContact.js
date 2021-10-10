@@ -10,14 +10,8 @@ export default function FormContact() {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
 
-  const succesMessage = () => {
-    const formMess = document.querySelector('.form-message');
-    formMess.innerHTML = 'Message envoyé. Je vous contact dès que possible. Cordialement.';
-  };
-
   const sendBack = (templateId, variables) => {
     window.emailjs.send('service_ioi4pk3', templateId, variables).then(() => {
-      succesMessage();
       setName('');
       setCompany('');
       setTel('');
@@ -34,6 +28,16 @@ export default function FormContact() {
       return true;
     }
     return '';
+  };
+
+  const succesMessage = () => {
+    const formMess = document.querySelector('.form-message');
+    formMess.innerHTML = 'Message envoyé. Je vous contact dès que possible. Cordialement.';
+    if (name && email && message) {
+      formMess.style.display = 'block';
+    } else {
+      formMess.style.display = 'none';
+    }
   };
 
   const failEmail = () => {
@@ -61,6 +65,9 @@ export default function FormContact() {
     e.preventDefault();
 
     if (name && isEmail() && message) {
+      succesMessage();
+      failEmail('');
+      failMessage('');
       sendBack('template_gvs6rqv', {
         name,
         company,
@@ -135,6 +142,7 @@ export default function FormContact() {
           <div className='message-err' />
 
           <SendIcon className='send' onClick={handleSubmit} />
+
           <div className='form-message' />
         </form>
 
