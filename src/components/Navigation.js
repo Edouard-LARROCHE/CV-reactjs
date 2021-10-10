@@ -38,8 +38,9 @@ export default function Navigation() {
             </NavLink>
           </li>
           <li>
-            <NavLink className='lock' exact to='admin' activeClassName='navActive'>
+            <NavLink exact to='admin' activeClassName='navActive'>
               <i className='fa fa-lock' />
+              <span>Admin</span>
             </NavLink>
           </li>
         </ul>

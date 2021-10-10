@@ -13,8 +13,6 @@
       display: flex;
       justify-content: center;
       font-size: 1.5rem;
-      position: relative;
-      top: 5rem;
       text-decoration: underline;
     }
   }
@@ -55,4 +53,13 @@
     top: 6rem !important;
     padding: 1rem 2rem !important;
   }
+}
+
+/***************************Administration site**************************/
+
+.deco {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  margin-top: 1rem;
 }

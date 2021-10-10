@@ -49,7 +49,7 @@
         grid-area: L;
       }
       .frameworksDisplay {
-        margin-top: -0.5rem;
+        margin-top: -3rem;
         grid-area: F;
       }
 
@@ -75,7 +75,7 @@
             content: '';
             background: $black;
             position: absolute;
-            height: 155px;
+            height: 150px;
             width: 1px;
             transform: translate(11px, 20px);
           }
