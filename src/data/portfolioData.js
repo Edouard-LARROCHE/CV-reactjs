@@ -35,13 +35,4 @@ export const portfolioData = [
     info: "Le premier projet sur lequel j'ai travaillé durant ma formation à la WCS. Un des plus classique, créé uniquement en html/css. Avec un peu de javascript, juste un peu.  ",
     picture: './assets/wildcodeschool.png',
   },
-  {
-    id: 5,
-    name: 'Space Js',
-    languages: ['javascript', 'css', 'react', 'nodejs'],
-    languagesIcons: ['fab fa-js', 'fab fa-css3-alt', 'fab fa-react', 'fab fa-node'],
-    source: 'https://github.com/',
-    info: 'lorem ipsum odor amet, consectetuer adipiscing elit. Imperdiet erat nullam tortor quis elit lacusblandcommodo metus vestibulum tristique. Tristiquevolutpat Massa lacus pulvinar aliquam mi tristique.',
-    picture: './assets/nebula.jpg',
-  },
 ];
