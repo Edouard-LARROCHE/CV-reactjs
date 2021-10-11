@@ -220,6 +220,10 @@
     display: grid !important;
     grid-template-columns: 1fr 1fr 1fr !important;
 
+    .experience {
+      grid-template-rows: 8% 35% 38% 20% !important;
+    }
+
     .otherSkills {
       height: 12rem;
     }
