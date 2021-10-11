@@ -14,7 +14,7 @@ export const portfolioData = [
     languages: ['javascript', 'css', 'react'],
     languagesIcons: ['fab fa-js', 'fab fa-css3-alt', 'fab fa-react'],
     source: 'https://github.com/BaptisteGrias/Marsbot',
-    info: 'Application créée en 24h durant un hackathon qui vous permet de dialoguer avec un "bot" sur la planète Mars. Nous ne sommes pas seul ! Bon voyage...  ',
+    info: 'Application créée en 24h durant un hackathon qui vous permet de dialoguer avec un "bot" sur la planète Mars. Nous ne sommes pas seuls ! Bon voyage...  ',
     picture: './assets/mars.png',
   },
   {
@@ -32,7 +32,7 @@ export const portfolioData = [
     languages: ['javascript', 'css', 'html5'],
     languagesIcons: ['fab fa-js', 'fab fa-css3-alt', 'fab fa-html5'],
     source: 'https://github.com/JeromeShaaban/WildersPortfolio',
-    info: "Le premier projet sur lequel j'ai travaillé durant ma formation à la WCS. Un des plus classique, créé uniquement en html/css; avec un peu de javascript, juste un peu.  ",
+    info: "Le premier projet sur lequel j'ai travaillé durant ma formation à la WCS. Un des plus classiques, créé uniquement en html/css; avec un peu de javascript, juste un peu.  ",
     picture: './assets/wildcodeschool.png',
   },
 ];
