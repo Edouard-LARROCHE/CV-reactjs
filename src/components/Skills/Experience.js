@@ -27,7 +27,7 @@ export default function Experience() {
         <p>
           Manager une équipe.
           <br />
-          Coordonner les plannings en fonction des postes à tenir et des compétences des employés.Tenir les engagements en terme de résultats et de
+          Coordonner les plannings en fonction des postes à tenir et des compétences des employés. Tenir les engagements en terme de résultats et de
           délais.
           <br />
           Gestion des stocks et approvisionnements en fonction des besoins de l'établissement, relation fournisseurs, contrôle de la marchandise.

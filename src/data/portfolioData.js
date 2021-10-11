@@ -14,7 +14,7 @@ export const portfolioData = [
     languages: ['javascript', 'css', 'react'],
     languagesIcons: ['fab fa-js', 'fab fa-css3-alt', 'fab fa-react'],
     source: 'https://github.com/BaptisteGrias/Marsbot',
-    info: 'Application créée en 24h durant un hackathon. Ce projet vous permet de dialoguer avec un "bot" sur la planète Mars. Nous ne sommes pas seul ! Bon voyage...  ',
+    info: 'Application créée en 24h durant un hackathon qui vous permet de dialoguer avec un "bot" sur la planète Mars. Nous ne sommes pas seul ! Bon voyage...  ',
     picture: './assets/mars.png',
   },
   {
