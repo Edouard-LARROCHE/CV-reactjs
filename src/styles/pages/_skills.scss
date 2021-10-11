@@ -139,7 +139,7 @@
 
   p {
     font-size: 0.9rem;
-    word-spacing: 0.3rem;
+    word-spacing: 0.2rem;
     padding-left: 0.3rem;
   }
   .title-exp {
@@ -158,6 +158,10 @@
 
 .cv-projet {
   text-decoration: underline;
+  font-size: 0.9rem;
+  word-spacing: 0.1rem;
+  padding-left: 0.3rem;
+  cursor: pointer;
 }
 
 /****************************autres compétences***********************************/
