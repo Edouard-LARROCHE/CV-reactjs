@@ -26,7 +26,7 @@ export default function OthersSkills() {
         <ul>
           <li>
             <i className='fas fa-check-square' />
-            Autonomie
+            MySQL
           </li>
           <li>
             <i className='fas fa-check-square' />
@@ -38,7 +38,7 @@ export default function OthersSkills() {
           </li>
           <li>
             <i className='fas fa-check-square' />
-            Prise d'initiative
+            Prise d'initiative / Autonomie
           </li>
         </ul>
       </div>
