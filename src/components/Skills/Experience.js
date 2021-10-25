@@ -37,7 +37,7 @@ export default function Experience() {
         </p>
       </div>
       <div className='exp-3'>
-        <h4>Charpentier - Compagnon du Devoir</h4>
+        <h4>Charpentier - Compagnons du Devoir</h4>
         <h5>2003-2009</h5>
         <p>Conception d'épures, fabrication et pose de charpentes en ossatures bois et métalliques. Rénovations de planchés et éscaliers.</p>
       </div>
