@@ -39,7 +39,7 @@ export default function Navigation() {
           </li>
           <li>
             <NavLink exact to='admin' activeClassName='navActive'>
-              <i className='fa fa-lock' />
+              <i className='fa fa-user-circle' />
               <span>Admin</span>
             </NavLink>
           </li>
