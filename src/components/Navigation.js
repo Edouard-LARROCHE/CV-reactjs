@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import SocialNet from './SocialNet';
+import CopyrightIcon from '@material-ui/icons/Copyright';
 
 export default function Navigation() {
   return (
@@ -49,7 +50,11 @@ export default function Navigation() {
         <SocialNet />
       </div>
       <div className='signature'>
-        <p>Edouard.CV - 2021</p>
+        <span>
+          Edouard.CV
+          <CopyrightIcon className='copyright' />
+          2021
+        </span>
       </div>
     </div>
   );
