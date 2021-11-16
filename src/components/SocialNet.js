@@ -20,11 +20,6 @@ export default function SocialNet() {
               <i className='fab fa-twitter' />
             </a>
           </li>
-          <li>
-            <a href='https://www.facebook.com' target='_blank' rel='noopener noreferrer'>
-              <i className='fab fa-facebook' />
-            </a>
-          </li>
         </ul>
       </div>
     </div>
