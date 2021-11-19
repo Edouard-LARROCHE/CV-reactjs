@@ -8,6 +8,7 @@ export default function ProgressBar(props) {
         <span>Année d'experience</span>
         <span>6 mois</span>
         <span>1 an</span>
+        <span>2 ans</span>
       </div>
 
       <div>

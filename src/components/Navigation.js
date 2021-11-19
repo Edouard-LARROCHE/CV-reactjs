@@ -10,6 +10,7 @@ export default function Navigation() {
         <div className='idcontent'>
           <img src='./assets/avatar1.jpg' alt='background' />
           <h3> Edouard LARROCHE</h3>
+          <p> Développeur full-stack </p>
         </div>
       </div>
       <div className='navigation'>
