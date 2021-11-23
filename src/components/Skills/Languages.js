@@ -10,9 +10,10 @@ export default class Languages extends Component {
     ],
     frameworks: [
       { id: 1, value: 'ReactJs', xp: 1 },
-      { id: 2, value: 'Angular', xp: 0.1 },
-      { id: 3, value: 'Sass', xp: 0.8 },
-      { id: 4, value: 'Material UI', xp: 0.7 },
+      { id: 2, value: 'NodeJs', xp: 0.8 },
+      { id: 3, value: 'jQuery', xp: 1 },
+      { id: 4, value: 'Sass', xp: 0.8 },
+      { id: 5, value: 'Material UI', xp: 1 },
     ],
   };
   render() {
