@@ -38,6 +38,43 @@ body {
   color: $black;
 }
 
+.sidebar,
+.languagesFrameworks,
+.experience,
+.otherSkills,
+.hobbies,
+.content,
+.adminContent {
+  background: var(--background);
+
+  div,
+  span,
+  h5,
+  h3,
+  h2,
+  h1,
+  p,
+  i {
+    color: var(--text-primary);
+  }
+  .socialNetwork i {
+    color: $black;
+  }
+  .navigation li {
+    border-top-color: var(--text-primary);
+  }
+}
+
+:root {
+  --background: #e5e5db;
+  --text-primary: #333;
+}
+
+[data-theme='dark'] {
+  --background: #333;
+  --text-primary: #e5e5db;
+}
+
 button {
   cursor: pointer;
 }
