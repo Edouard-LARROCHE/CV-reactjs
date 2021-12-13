@@ -33,11 +33,11 @@
 
   .unLock {
     cursor: pointer;
+    color: $black;
   }
 }
 
 .fail-login {
-  color: $black;
   font-size: 0.9rem;
 }
 
