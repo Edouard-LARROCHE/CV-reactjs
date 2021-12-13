@@ -1,6 +1,6 @@
 .portfolio {
   .portfolioContent {
-    background: $color-2;
+    // background: $color-2;
     width: 100%;
     display: grid;
     min-height: $minHeight;
@@ -18,7 +18,7 @@
     width: 100%;
     padding: 1rem 2rem;
     margin: 0 auto;
-    background: $color-2;
+    // background: $color-2;
     user-select: none;
 
     li {
@@ -69,9 +69,7 @@
         top: 2px;
         left: -6px;
       }
-      input:checked + label {
-        color: $color-1;
-      }
+
       label {
         cursor: pointer;
       }

@@ -15,14 +15,12 @@
     .experience,
     .otherSkills,
     .hobbies {
-      background: $color-2;
       border-radius: $borderRadius;
     }
 
     h3 {
       text-decoration: underline;
       margin-bottom: 0.8rem;
-      color: $black;
     }
 
     h5 {
@@ -31,7 +29,6 @@
       font-size: 0.8rem;
       text-transform: uppercase;
       letter-spacing: 0.2rem;
-      color: $black;
     }
 
     .languagesFrameworks {
@@ -78,7 +75,7 @@
           &:nth-child(3):before,
           &:nth-child(4):before {
             content: '';
-            background: $black;
+            // background: $black;
             position: absolute;
             height: 200px;
             width: 1px;
@@ -101,7 +98,7 @@
           &:after {
             position: absolute;
             content: '';
-            background: $black;
+            // background: $black;
             border-radius: 50px;
             height: 0.2rem;
             width: 0;

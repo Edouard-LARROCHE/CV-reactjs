@@ -38,6 +38,88 @@ body {
   color: $black;
 }
 
+/**************Dark Mode********************/
+
+.sidebar,
+.languagesFrameworks,
+.experience,
+.otherSkills,
+.hobbies,
+.content,
+.adminContent,
+.portfolioContent,
+.radioDisplay,
+.projects,
+.header,
+.contactContent,
+.info,
+.socialNet {
+  background: var(--background);
+
+  div,
+  label,
+  span,
+  h5,
+  h3,
+  h2,
+  h1,
+  p,
+  i {
+    color: var(--text-primary);
+  }
+  .socialNetwork i {
+    color: $black;
+  }
+  .navigation li {
+    border-top-color: var(--text-primary);
+  }
+  .progressBar {
+    &:after {
+      background: var(--text-primary);
+    }
+  }
+  .years {
+    span {
+      &:nth-child(2):before,
+      &:nth-child(3):before,
+      &:nth-child(4):before {
+        background: var(--text-primary);
+      }
+    }
+  }
+  .adminForm input::placeholder {
+    color: $black;
+  }
+
+  .unLock {
+    color: var(--background);
+  }
+  .fail-login {
+    color: $black;
+  }
+  .contact-form input,
+  textarea::placeholder {
+    color: $black;
+  }
+  .email-err,
+  .message-err,
+  .form-message {
+    color: $black;
+  }
+}
+
+:root {
+  --background: #e5e5db;
+  --text-primary: #333;
+}
+
+[data-theme='dark'] {
+  --background: #333;
+  --text-primary: #e5e5db;
+}
+
+/*******************************************/
+
 button {
   cursor: pointer;
 }
@@ -86,7 +168,7 @@ a:visited {
 
 @media screen and (max-width: 850px) {
   .socialNet {
-    background: $color-3 !important;
+    // background: $color-3 !important;
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;

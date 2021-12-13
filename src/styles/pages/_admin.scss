@@ -1,6 +1,5 @@
 .admin {
   .adminContent {
-    background-color: $color-2;
     min-height: $minHeight;
     width: 100%;
     min-height: 500px;
@@ -34,11 +33,11 @@
 
   .unLock {
     cursor: pointer;
+    color: $black;
   }
 }
 
 .fail-login {
-  color: $black;
   font-size: 0.9rem;
 }
 

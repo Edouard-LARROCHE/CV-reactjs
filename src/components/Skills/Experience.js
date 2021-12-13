@@ -17,7 +17,7 @@ export default function Experience() {
 
         <div className='cv-projet'>
           <a href='https://github.com/Edouard-LARROCHE/CV-reactjs' target='_blank' rel='noopener noreferrer'>
-            Site de présentation disponible sur mon Github
+            <span> Site de présentation disponible sur mon Github</span>
           </a>
         </div>
       </div>
