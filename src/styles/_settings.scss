@@ -38,16 +38,22 @@ body {
   color: $black;
 }
 
+/**************Dark Mode********************/
+
 .sidebar,
 .languagesFrameworks,
 .experience,
 .otherSkills,
 .hobbies,
 .content,
-.adminContent {
+.adminContent,
+.portfolioContent,
+.radioDisplay,
+.projects {
   background: var(--background);
 
   div,
+  label,
   span,
   h5,
   h3,
@@ -63,6 +69,20 @@ body {
   .navigation li {
     border-top-color: var(--text-primary);
   }
+  .progressBar {
+    &:after {
+      background: var(--text-primary);
+    }
+  }
+  .years {
+    span {
+      &:nth-child(2):before,
+      &:nth-child(3):before,
+      &:nth-child(4):before {
+        background: var(--text-primary);
+      }
+    }
+  }
 }
 
 :root {
@@ -74,6 +94,8 @@ body {
   --background: #333;
   --text-primary: #e5e5db;
 }
+
+/*******************************************/
 
 button {
   cursor: pointer;
