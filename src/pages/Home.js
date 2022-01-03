@@ -65,7 +65,7 @@ export default function Home() {
       <div className='homeContent'>
         <div className='content'>
           <h2>Edouard-LARROCHE</h2>
-          <h3>Développeur web Full-Stack junior</h3>
+          <h3>Développeur web Front-end junior</h3>
           <div className='sphere'>
             <IconCloud
               className='icons'
